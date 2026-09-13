@@ -63,6 +63,48 @@ title = "palimpsest"
   [[sidebar.section.item]]
   target = "palimpsest/index.typ"
 
+  [[sidebar.section.item]]
+  target = "palimpsest/quickstart/index.typ"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/marking/index.typ"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/anchors/index.typ"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/styling/index.typ"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/shortcuts/index.typ"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/exchanges/index.typ"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/pinpoint/index.typ"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/xref/index.typ"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/change-list/index.typ"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/tables/index.typ"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/bibliography/index.typ"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/diagnostics/index.typ"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/project/index.typ"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/ecosystem/index.typ"
+
 [[sidebar.section]]
 title = "equator"
 

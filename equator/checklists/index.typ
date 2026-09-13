@@ -9,7 +9,7 @@
 #table(
   columns: (auto, auto, auto, 1fr),
   align: (left, left, center, left),
-  stroke: 0.5pt + luma(180),
+  stroke: 0.75pt + luma(120),
   table.header[*`checklists.` key*][*Guideline*][*Items*][*Notes*],
   [`consort`], [CONSORT 2025 (randomised trials)], [42], [Landscape A4; one mid-level group, "Randomisation" (17a–21d).],
   [`prisma`], [PRISMA 2020 (systematic reviews)], [42], [Landscape US Letter; no mid-level groups.],

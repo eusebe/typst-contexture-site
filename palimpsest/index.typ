@@ -42,14 +42,18 @@ _derivable_ from the first.
 Requires Typst 0.15 or later, specifically its `--features bundle`
 export (still experimental).
 
-= Full manual and examples
+= Full manual
 
-The complete manual and two full worked examples (real Typst Universe
-templates, real figures) live in the repository for now, while this
-site's progressive guide is still being migrated over:
-#link("https://github.com/eusebe/typst-palimpsest/blob/main/docs/manual.pdf")[docs/manual.pdf],
-#link("https://github.com/eusebe/typst-palimpsest/tree/main/examples")[examples/]
-(#link("https://github.com/eusebe/typst-palimpsest")[repository]).
+The complete, progressive manual — a first revision round, marking
+changes, anchors, styling marks, shortcuts, writing the exchanges,
+pinpoint, xref, the change-list, tables, bibliography, diagnostics,
+wiring a real project, and palimpsest in the contexture ecosystem —
+starts at #link("/palimpsest/quickstart/")[Your first revision round].
+Two full worked examples (real Typst Universe templates, real figures)
+live in the
+#link("https://github.com/eusebe/typst-palimpsest/tree/main/examples")[repository],
+alongside a PDF version
+(#link("https://github.com/eusebe/typst-palimpsest/blob/main/docs/manual.pdf")[docs/manual.pdf]).
 
 = Combining with other packages
 

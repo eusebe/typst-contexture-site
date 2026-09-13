@@ -2,17 +2,24 @@
 // calepin only compiles files reached from calepin.toml's menus/sidebar, so
 // this module is safe to import without producing a stray page of its own.
 
-// A real compiled screenshot, in a thin neutral border that reads fine in
-// both light and dark themes (no fill: the screenshot's own white page
-// already provides the contrast).
+#import "/.calepin/calepin.typ" as calepin
+
+// Every ```sh/```typ block in these chapters is a static, illustrative
+// snippet, never something calepin should actually execute as a
+// notebook chunk (which needs jupyter_client and isn't installed here
+// anyway) — importing this module turns that off for the page that
+// imports it.
+#calepin.setup(fenced-chunks: false)
+
+// A real compiled screenshot. Typst's own `block(stroke:, radius:, ...)`
+// is silently dropped by calepin's HTML export (no warning — the block
+// itself renders, just none of its decoration), so the border has to
+// come from calepin's own `elements.card`, which emits real CSS
+// (`border`/`box-shadow`, using the theme's own color tokens so it
+// reads correctly in both light and dark) instead of a Typst-layout
+// stroke that only works in the PDF target.
 #let screenshot(path, caption: none, width: 100%) = block(width: width)[
-  #block(
-    stroke: 0.5pt + luma(180),
-    inset: 3pt,
-    radius: 4pt,
-    width: 100%,
-    image(path, width: 100%),
-  )
+  #calepin.elements.card(width: 100%)[#image(path, width: 100%)]
   #if caption != none [
     #text(size: 0.85em, style: "italic")[#caption]
   ]
@@ -38,13 +45,7 @@
 )
 
 // A labelled aside for a caveat, a design note, or a "why" digression —
-// visually distinct from the main prose without hardcoding light/dark
-// colors that would fight the site's own theme.
-#let note(title: "Note", body) = block(
-  stroke: (left: 2pt + luma(150)),
-  inset: (left: 10pt, y: 2pt),
-  width: 100%,
-)[
-  #text(weight: "bold", size: 0.9em)[#title] \
-  #body
-]
+// calepin's own themed callout component (same reasoning as
+// `screenshot` above: a hand-rolled `block(stroke: (left: ...))` is
+// dropped entirely by HTML export).
+#let note(title: "Note", body) = calepin.elements.callout(kind: "note", title: title, body)
