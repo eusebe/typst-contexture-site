@@ -57,6 +57,30 @@ title = "contexture"
   [[sidebar.section.item]]
   target = "contexture/index.typ"
 
+  [[sidebar.section.item]]
+  target = "contexture/quickstart/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/anchors/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/list-of-figures/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/bundle/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/variant-preview/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/diagnostics/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/xref/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/composing/index.typ"
+
 [[sidebar.section]]
 title = "palimpsest"
 

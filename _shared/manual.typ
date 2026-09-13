@@ -30,6 +30,16 @@
 // actually compiled to produce the screenshots next to it.
 #let snippet(path) = raw(read(path), block: true, lang: "typ")
 
+// Two or more screenshots side by side — `grid` is dropped by HTML
+// export the same way `line`/`v` are (see `chapter-nav` above), so
+// this uses a borderless table instead, same as there.
+#let side-by-side(..shots) = table(
+  columns: shots.pos().len(),
+  stroke: none,
+  inset: (x: 6pt, y: 0pt),
+  ..shots,
+)
+
 // A short bottom-of-chapter nav strip: link back to the package's own
 // manual overview and forward to the next chapter. `grid`/`line`/`v`
 // are all layout primitives Typst's HTML export silently drops, so

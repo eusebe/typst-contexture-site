@@ -53,12 +53,14 @@ export (still experimental).
 
 = Full manual
 
-The complete, progressive manual for `contexture` — one primitive at a
-time, every result a real compiled screenshot — lives in its own
-repository for now, while this site's per-package guides are still
-being migrated over:
-#link("https://github.com/eusebe/typst-contexture/blob/main/docs/manual.pdf")[docs/manual.pdf]
-(#link("https://github.com/eusebe/typst-contexture")[repository]).
+The complete, progressive manual — a quickstart, the anchor primitive,
+a fuller list-of-figures example, satellite and bundle, the two compile
+axes, diagnostics, xref, and composing independent packages — starts at
+#link("/contexture/quickstart/")[Quickstart: a manuscript with a
+generated companion]. A PDF version
+(#link("https://github.com/eusebe/typst-contexture/blob/main/docs/manual.pdf")[docs/manual.pdf])
+is also available in the
+#link("https://github.com/eusebe/typst-contexture")[repository].
 
 = Built on `contexture`
 
