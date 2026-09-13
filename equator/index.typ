@@ -39,12 +39,14 @@ export (still experimental).
 
 = Full manual
 
-The complete, progressive manual — a first checklist, diagnostics,
-styling, wiring a real project, combining with `palimpsest` — lives in
-the repository for now, while this site's own guide is still being
-migrated over:
-#link("https://github.com/eusebe/typst-equator/blob/main/docs/manual.pdf")[docs/manual.pdf]
-(#link("https://github.com/eusebe/typst-equator")[repository]).
+The complete, progressive manual — a first checklist, marking items,
+diagnostics, quoting the wording, the page-break idiom, styling the
+grid, wiring a real project, the built-in checklists, and equator in
+the contexture ecosystem — starts at
+#link("/equator/quickstart/")[Your first checklist]. A PDF version
+(#link("https://github.com/eusebe/typst-equator/blob/main/docs/manual.pdf")[docs/manual.pdf])
+is also available in the
+#link("https://github.com/eusebe/typst-equator")[repository].
 
 = Combining with other packages
 

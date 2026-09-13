@@ -69,6 +69,33 @@ title = "equator"
   [[sidebar.section.item]]
   target = "equator/index.typ"
 
+  [[sidebar.section.item]]
+  target = "equator/quickstart/index.typ"
+
+  [[sidebar.section.item]]
+  target = "equator/marking/index.typ"
+
+  [[sidebar.section.item]]
+  target = "equator/diagnostics/index.typ"
+
+  [[sidebar.section.item]]
+  target = "equator/excerpts/index.typ"
+
+  [[sidebar.section.item]]
+  target = "equator/page-breaks/index.typ"
+
+  [[sidebar.section.item]]
+  target = "equator/styling/index.typ"
+
+  [[sidebar.section.item]]
+  target = "equator/project/index.typ"
+
+  [[sidebar.section.item]]
+  target = "equator/checklists/index.typ"
+
+  [[sidebar.section.item]]
+  target = "equator/ecosystem/index.typ"
+
 [[sidebar.section]]
 title = "colophon"
 
