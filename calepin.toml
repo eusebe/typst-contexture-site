@@ -167,3 +167,24 @@ title = "colophon"
 
   [[sidebar.section.item]]
   target = "colophon/index.typ"
+
+  [[sidebar.section.item]]
+  target = "colophon/quickstart/index.typ"
+
+  [[sidebar.section.item]]
+  target = "colophon/word-counts/index.typ"
+
+  [[sidebar.section.item]]
+  target = "colophon/abstract/index.typ"
+
+  [[sidebar.section.item]]
+  target = "colophon/inventory/index.typ"
+
+  [[sidebar.section.item]]
+  target = "colophon/anomalies/index.typ"
+
+  [[sidebar.section.item]]
+  target = "colophon/project/index.typ"
+
+  [[sidebar.section.item]]
+  target = "colophon/ecosystem/index.typ"

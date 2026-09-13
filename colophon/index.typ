@@ -1,9 +1,15 @@
 #import "/.calepin/calepin.typ" as calepin
+#import "/_shared/manual.typ" as m
 
 #set document(title: [colophon])
 #metadata((title: "colophon", translation_key: "colophon")) <website-metadata>
 
 #title()
+
+#m.side-by-side(
+  m.screenshot("/packages/colophon/readme-assets/manuscript.png", caption: [A short manuscript, compiled normally]),
+  m.screenshot("/packages/colophon/readme-assets/audit.png", caption: [The generated audit.pdf]),
+)
 
 *colophon* audits your manuscript _as actually composed_ — word count
 (total and per section), reading time, page count, a figure/table
@@ -40,12 +46,19 @@ produces the manuscript, not a stale copy.
 Requires Typst 0.15 or later, specifically its `--features bundle`
 export (still experimental).
 
+= Full manual
+
+The complete, progressive manual — a first audit, word counts, the
+abstract, the figure/table inventory, orphan labels and uncited
+references, wiring a real project, and colophon in the contexture
+ecosystem — starts at
+#link("/colophon/quickstart/")[Quickstart: your first audit].
+
 = Examples
 
 Two complete, working projects — the same full-length fake articles
 `palimpsest` uses for its own examples, with `colophon` added alongside
-its reviewer letter — live in the repository for now, while this
-site's own guide is still being migrated over:
+its reviewer letter — live in the repository:
 #link("https://github.com/eusebe/typst-colophon/tree/main/examples")[examples/]
 (#link("https://github.com/eusebe/typst-colophon")[repository]).
 
