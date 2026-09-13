@@ -1,0 +1,12 @@
+[submodule "packages/contexture"]
+	path = packages/contexture
+	url = https://github.com/eusebe/typst-contexture.git
+[submodule "packages/palimpsest"]
+	path = packages/palimpsest
+	url = https://github.com/eusebe/typst-palimpsest.git
+[submodule "packages/equator"]
+	path = packages/equator
+	url = https://github.com/eusebe/typst-equator.git
+[submodule "packages/colophon"]
+	path = packages/colophon
+	url = https://github.com/eusebe/typst-colophon.git

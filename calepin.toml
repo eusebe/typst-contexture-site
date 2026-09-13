@@ -1,0 +1,76 @@
+title = "contexture"
+description = "A small Typst engine for producing several cross-referencing documents from one compile, and the packages built on it: manuscript revisions, reporting-guideline checklists, and a manuscript audit."
+theme = "calepin"
+
+pdf = true
+default-language = "en"
+
+[static]
+include = ["assets/**"]
+
+[[menus.main]]
+target = "contexture/index.typ"
+label = "contexture"
+
+[[menus.main]]
+target = "palimpsest/index.typ"
+label = "palimpsest"
+
+[[menus.main]]
+target = "equator/index.typ"
+label = "equator"
+
+[[menus.main]]
+target = "colophon/index.typ"
+label = "colophon"
+
+[[menus.main]]
+target = "combining/index.typ"
+label = "Combining"
+
+[[menus.social]]
+target = "https://github.com/eusebe"
+label = "{icon:github}"
+aria-label = "GitHub"
+
+[footer]
+
+[[footer.item]]
+target = "https://vincentarelbundock.github.io/calepin"
+label = "Made with Calepin"
+
+[sidebar]
+fold = false
+
+[[sidebar.section]]
+title = "Ecosystem"
+
+  [[sidebar.section.item]]
+  target = "index.typ"
+
+  [[sidebar.section.item]]
+  target = "combining/index.typ"
+
+[[sidebar.section]]
+title = "contexture"
+
+  [[sidebar.section.item]]
+  target = "contexture/index.typ"
+
+[[sidebar.section]]
+title = "palimpsest"
+
+  [[sidebar.section.item]]
+  target = "palimpsest/index.typ"
+
+[[sidebar.section]]
+title = "equator"
+
+  [[sidebar.section.item]]
+  target = "equator/index.typ"
+
+[[sidebar.section]]
+title = "colophon"
+
+  [[sidebar.section.item]]
+  target = "colophon/index.typ"
