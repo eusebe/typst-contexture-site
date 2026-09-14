@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [Quickstart: a manuscript with a generated companion])
-#metadata((title: "Quickstart: a manuscript with a generated companion", translation_key: "contexture-quickstart")) <website-metadata>
+#set document(title: [Quickstart])
+#metadata((title: "Quickstart", translation_key: "contexture-quickstart")) <website-metadata>
 
 #title()
 

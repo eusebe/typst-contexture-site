@@ -8,3 +8,4 @@ _site/
 # renders. A build removes its own; strays are left by interrupted runs and
 # swept up by `calepin clean`.
 .calepin-entry.*
+.DS_Store

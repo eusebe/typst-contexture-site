@@ -75,6 +75,6 @@ with no other package installed. For what to build with it:
   package's own manual.
 
 #m.chapter-nav(
-  prev: ("/contexture/xref/", "xref: cross-references with a real page number"),
+  prev: ("/contexture/xref/", "xref"),
   next: none,
 )

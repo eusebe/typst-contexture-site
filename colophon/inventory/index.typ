@@ -65,5 +65,5 @@ figure's `ref(...)` is.
 
 #m.chapter-nav(
   prev: ("/colophon/abstract/", "The abstract"),
-  next: ("/colophon/anomalies/", "Orphan labels and uncited references"),
+  next: ("/colophon/anomalies/", "Anomalies"),
 )

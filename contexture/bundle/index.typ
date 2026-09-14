@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [satellite and bundle: the shared pilot])
-#metadata((title: "satellite and bundle: the shared pilot", translation_key: "contexture-bundle")) <website-metadata>
+#set document(title: [satellite and bundle])
+#metadata((title: "satellite and bundle", translation_key: "contexture-bundle")) <website-metadata>
 
 #title()
 
@@ -71,6 +71,6 @@ the manuscript's own content written directly after
 ]
 
 #m.chapter-nav(
-  prev: ("/contexture/list-of-figures/", "A fuller example: list of figures"),
+  prev: ("/contexture/list-of-figures/", "List of figures"),
   next: ("/contexture/variant-preview/", "Two independent compile axes"),
 )

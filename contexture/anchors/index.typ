@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [The anchor primitive: anchor, anchors])
-#metadata((title: "The anchor primitive: anchor, anchors", translation_key: "contexture-anchors")) <website-metadata>
+#set document(title: [The anchor primitive])
+#metadata((title: "The anchor primitive", translation_key: "contexture-anchors")) <website-metadata>
 
 #title()
 
@@ -60,5 +60,5 @@ float above.
 
 #m.chapter-nav(
   prev: ("/contexture/quickstart/", "Quickstart"),
-  next: ("/contexture/list-of-figures/", "A fuller example: list of figures"),
+  next: ("/contexture/list-of-figures/", "List of figures"),
 )

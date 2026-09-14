@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [pinpoint: the manuscript/letter link])
-#metadata((title: "pinpoint: the manuscript/letter link", translation_key: "palimpsest-pinpoint")) <website-metadata>
+#set document(title: [pinpoint])
+#metadata((title: "pinpoint", translation_key: "palimpsest-pinpoint")) <website-metadata>
 
 #title()
 
@@ -179,5 +179,5 @@ journal with its own citation convention.
 
 #m.chapter-nav(
   prev: ("/palimpsest/exchanges/", "Writing the exchanges"),
-  next: ("/palimpsest/xref/", "xref: pointing into the manuscript"),
+  next: ("/palimpsest/xref/", "xref"),
 )

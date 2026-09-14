@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [Anchors: reviewer, editor, author])
-#metadata((title: "Anchors: reviewer, editor, author", translation_key: "palimpsest-anchors")) <website-metadata>
+#set document(title: [Anchors])
+#metadata((title: "Anchors", translation_key: "palimpsest-anchors")) <website-metadata>
 
 #title()
 

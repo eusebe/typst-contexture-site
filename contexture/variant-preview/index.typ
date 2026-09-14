@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [Two independent compile axes: variant, preview])
-#metadata((title: "Two independent compile axes: variant, preview", translation_key: "contexture-variant-preview")) <website-metadata>
+#set document(title: [variant and preview])
+#metadata((title: "variant and preview", translation_key: "contexture-variant-preview")) <website-metadata>
 
 #title()
 
@@ -82,5 +82,5 @@ time, and a compile using both is simply both suffixes, in order.
 
 #m.chapter-nav(
   prev: ("/contexture/bundle/", "satellite and bundle"),
-  next: ("/contexture/diagnostics/", "Diagnostics: diagnose, set-strict"),
+  next: ("/contexture/diagnostics/", "Diagnostics"),
 )

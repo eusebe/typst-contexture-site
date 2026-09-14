@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [Diagnostics: diagnose, set-strict])
-#metadata((title: "Diagnostics: diagnose, set-strict", translation_key: "contexture-diagnostics")) <website-metadata>
+#set document(title: [Diagnostics])
+#metadata((title: "Diagnostics", translation_key: "contexture-diagnostics")) <website-metadata>
 
 #title()
 
@@ -35,5 +35,5 @@ invisible even in the real, submitted deliverable:
 
 #m.chapter-nav(
   prev: ("/contexture/variant-preview/", "Two independent compile axes"),
-  next: ("/contexture/xref/", "xref: cross-references with a real page number"),
+  next: ("/contexture/xref/", "xref"),
 )

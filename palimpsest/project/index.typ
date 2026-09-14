@@ -163,5 +163,5 @@ What each command writes, with `exchanges` set:
 
 #m.chapter-nav(
   prev: ("/palimpsest/diagnostics/", "Diagnostics and strict mode"),
-  next: ("/palimpsest/ecosystem/", "Palimpsest in the contexture ecosystem"),
+  next: ("/palimpsest/ecosystem/", "Ecosystem"),
 )

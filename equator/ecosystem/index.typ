@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [Equator in the contexture ecosystem])
-#metadata((title: "Equator in the contexture ecosystem", translation_key: "equator-ecosystem")) <website-metadata>
+#set document(title: [Ecosystem])
+#metadata((title: "Ecosystem", translation_key: "equator-ecosystem")) <website-metadata>
 
 #title()
 

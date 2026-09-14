@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [xref: pointing into the manuscript])
-#metadata((title: "xref: pointing into the manuscript", translation_key: "palimpsest-xref")) <website-metadata>
+#set document(title: [xref])
+#metadata((title: "xref", translation_key: "palimpsest-xref")) <website-metadata>
 
 #title()
 
@@ -25,6 +25,6 @@ manuscript share one bundle — `xref` only adds the page. A label that
 doesn't exist anywhere warns rather than breaking the compile.
 
 #m.chapter-nav(
-  prev: ("/palimpsest/pinpoint/", "pinpoint: the manuscript/letter link"),
+  prev: ("/palimpsest/pinpoint/", "pinpoint"),
   next: ("/palimpsest/change-list/", "change-list"),
 )

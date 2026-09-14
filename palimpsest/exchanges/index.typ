@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [Writing the exchanges: reviewer, editor, exchange])
-#metadata((title: "Writing the exchanges: reviewer, editor, exchange", translation_key: "palimpsest-exchanges")) <website-metadata>
+#set document(title: [Writing the exchanges])
+#metadata((title: "Writing the exchanges", translation_key: "palimpsest-exchanges")) <website-metadata>
 
 #title()
 
@@ -69,5 +69,5 @@ originally written.
 
 #m.chapter-nav(
   prev: ("/palimpsest/shortcuts/", "Shortcuts"),
-  next: ("/palimpsest/pinpoint/", "pinpoint: the manuscript/letter link"),
+  next: ("/palimpsest/pinpoint/", "pinpoint"),
 )

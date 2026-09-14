@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [Orphan labels and uncited references])
-#metadata((title: "Orphan labels and uncited references", translation_key: "colophon-anomalies")) <website-metadata>
+#set document(title: [Anomalies])
+#metadata((title: "Anomalies", translation_key: "colophon-anomalies")) <website-metadata>
 
 #title()
 

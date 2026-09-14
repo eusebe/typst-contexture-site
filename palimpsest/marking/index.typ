@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [Marking changes: add, del, rep, suppress])
-#metadata((title: "Marking changes: add, del, rep, suppress", translation_key: "palimpsest-marking")) <website-metadata>
+#set document(title: [Marking changes])
+#metadata((title: "Marking changes", translation_key: "palimpsest-marking")) <website-metadata>
 
 #title()
 
@@ -80,5 +80,5 @@ already need one.
 
 #m.chapter-nav(
   prev: ("/palimpsest/quickstart/", "Your first revision round"),
-  next: ("/palimpsest/anchors/", "Anchors: reviewer, editor, author"),
+  next: ("/palimpsest/anchors/", "Anchors"),
 )

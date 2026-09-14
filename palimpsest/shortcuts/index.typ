@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [Shortcuts: added, deleted, replaced, touched, suppressed])
-#metadata((title: "Shortcuts: added, deleted, replaced, touched, suppressed", translation_key: "palimpsest-shortcuts")) <website-metadata>
+#set document(title: [Shortcuts])
+#metadata((title: "Shortcuts", translation_key: "palimpsest-shortcuts")) <website-metadata>
 
 #title()
 

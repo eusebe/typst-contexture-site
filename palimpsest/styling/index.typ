@@ -155,6 +155,6 @@ for instance — since the underlying counter it reads is the same one
 being frozen here.
 
 #m.chapter-nav(
-  prev: ("/palimpsest/anchors/", "Anchors: reviewer, editor, author"),
+  prev: ("/palimpsest/anchors/", "Anchors"),
   next: ("/palimpsest/shortcuts/", "Shortcuts"),
 )

@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [A fuller example: list of figures])
-#metadata((title: "A fuller example: list of figures", translation_key: "contexture-list-of-figures")) <website-metadata>
+#set document(title: [List of figures])
+#metadata((title: "List of figures", translation_key: "contexture-list-of-figures")) <website-metadata>
 
 #title()
 

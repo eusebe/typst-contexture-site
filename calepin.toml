@@ -40,7 +40,6 @@ target = "https://vincentarelbundock.github.io/calepin"
 label = "Made with Calepin"
 
 [sidebar]
-fold = false
 
 [[sidebar.section]]
 title = "Ecosystem"

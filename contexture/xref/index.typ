@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [xref: cross-references with a real page number])
-#metadata((title: "xref: cross-references with a real page number", translation_key: "contexture-xref")) <website-metadata>
+#set document(title: [xref])
+#metadata((title: "xref", translation_key: "contexture-xref")) <website-metadata>
 
 #title()
 

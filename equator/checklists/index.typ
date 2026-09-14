@@ -39,5 +39,5 @@ passes its own dictionary of the same shape in `checklist:` instead.
 
 #m.chapter-nav(
   prev: ("/equator/project/", "Wiring a real project"),
-  next: ("/equator/ecosystem/", "Equator in the contexture ecosystem"),
+  next: ("/equator/ecosystem/", "Ecosystem"),
 )

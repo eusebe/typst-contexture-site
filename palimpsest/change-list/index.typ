@@ -1,8 +1,8 @@
 #import "/.calepin/calepin.typ" as calepin
 #import "/_shared/manual.typ" as m
 
-#set document(title: [change-list: a summary table of every marked passage])
-#metadata((title: "change-list: a summary table of every marked passage", translation_key: "palimpsest-change-list")) <website-metadata>
+#set document(title: [change-list])
+#metadata((title: "change-list", translation_key: "palimpsest-change-list")) <website-metadata>
 
 #title()
 
@@ -54,6 +54,6 @@ and the table — `title: [Some other text]` would replace it with
 different wording instead, for the same reason.
 
 #m.chapter-nav(
-  prev: ("/palimpsest/xref/", "xref: pointing into the manuscript"),
+  prev: ("/palimpsest/xref/", "xref"),
   next: ("/palimpsest/tables/", "Working with tables"),
 )

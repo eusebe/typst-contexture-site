@@ -88,6 +88,6 @@ lists; naming `audit` explicitly (`--input only=audit`) skips any other
 satellite listed alongside it for one fast run.
 
 #m.chapter-nav(
-  prev: ("/colophon/anomalies/", "Orphan labels and uncited references"),
-  next: ("/colophon/ecosystem/", "colophon in the contexture ecosystem"),
+  prev: ("/colophon/anomalies/", "Anomalies"),
+  next: ("/colophon/ecosystem/", "Ecosystem"),
 )
