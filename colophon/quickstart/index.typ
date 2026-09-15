@@ -13,7 +13,7 @@
 #import "@preview/contexture:0.1.0": bundle
 ```
 
-Unlike #link("/palimpsest/")[palimpsest] and #link("/equator/")[equator],
+Unlike #link("/palimpsest/")[palimpsest] and #link("/checkitoff/")[checkitoff],
 colophon asks for no per-passage markup at all — no `check()`, no
 `passage()`. The one thing it does need is a small wrapping step on
 the manuscript's own `template:`, so it can find the manuscript's real

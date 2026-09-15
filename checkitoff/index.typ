@@ -1,11 +1,11 @@
 #import "/.calepin/calepin.typ" as calepin
 
-#set document(title: [equator])
-#metadata((title: "equator", translation_key: "equator")) <website-metadata>
+#set document(title: [checkitoff])
+#metadata((title: "checkitoff", translation_key: "checkitoff")) <website-metadata>
 
 #title()
 
-*equator* fills in a reporting-guideline checklist — CONSORT, PRISMA,
+*checkitoff* fills in a reporting-guideline checklist — CONSORT, PRISMA,
 SPIRIT, STARD, STROBE — automatically. Mark where each item is
 answered in your manuscript; one compile produces the clean manuscript
 plus a completed grid citing the _real_ page each item landed on.
@@ -30,7 +30,7 @@ and the grid together, sharing one introspection space.
 = Installation
 
 ```typ
-#import "@preview/equator:0.1.0": *
+#import "@preview/checkitoff:0.1.0": *
 #import "@preview/contexture:0.1.0": bundle
 ```
 
@@ -41,16 +41,16 @@ export (still experimental).
 
 The complete, progressive manual — a first checklist, marking items,
 diagnostics, quoting the wording, the page-break idiom, styling the
-grid, wiring a real project, the built-in checklists, and equator in
+grid, wiring a real project, the built-in checklists, and checkitoff in
 the contexture ecosystem — starts at
-#link("/equator/quickstart/")[Your first checklist]. A PDF version
-(#link("https://github.com/eusebe/typst-equator/blob/main/docs/manual.pdf")[docs/manual.pdf])
+#link("/checkitoff/quickstart/")[Your first checklist]. A PDF version
+(#link("https://github.com/eusebe/typst-checkitoff/blob/main/docs/manual.pdf")[docs/manual.pdf])
 is also available in the
-#link("https://github.com/eusebe/typst-equator")[repository].
+#link("https://github.com/eusebe/typst-checkitoff")[repository].
 
 = Combining with other packages
 
-`equator`'s `checklist(...)` combines cleanly with
+`checkitoff`'s `checklist(...)` combines cleanly with
 #link("/palimpsest/")[palimpsest]'s `letter(...)` and
 #link("/colophon/")[colophon]'s `report(...)` in the same compile. See
 #link("/combining/")[Combining packages].

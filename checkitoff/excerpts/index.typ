@@ -2,7 +2,7 @@
 #import "/_shared/manual.typ" as m
 
 #set document(title: [Quoting the real wording])
-#metadata((title: "Quoting the real wording", translation_key: "equator-excerpts")) <website-metadata>
+#metadata((title: "Quoting the real wording", translation_key: "checkitoff-excerpts")) <website-metadata>
 
 #title()
 
@@ -14,9 +14,9 @@ column; it's for a supplementary appendix some journals or protocols
 additionally want, with the exact wording quoted next to each item, or
 for an internal compliance review.
 
-#m.snippet("/packages/equator/docs/manual-snippets/bundle-excerpt.typ")
+#m.snippet("/packages/checkitoff/docs/manual-snippets/bundle-excerpt.typ")
 
-#m.screenshot("/packages/equator/docs/manual-snippets/bundle-excerpt/manuscript-plain.png")
+#m.screenshot("/packages/checkitoff/docs/manual-snippets/bundle-excerpt/manuscript-plain.png")
 
 `quotes: true` wraps a textual excerpt in real quotation marks, and
 silently declines on anything that isn't text — a figure, a table, a
@@ -27,6 +27,6 @@ render a warning box in the real, submitted deliverable — an uncovered
 item is already flagged exactly once, safely, in `checklist.pdf`.
 
 #m.chapter-nav(
-  prev: ("/equator/diagnostics/", "Reading the grid"),
-  next: ("/equator/page-breaks/", "The page-break idiom"),
+  prev: ("/checkitoff/diagnostics/", "Reading the grid"),
+  next: ("/checkitoff/page-breaks/", "The page-break idiom"),
 )

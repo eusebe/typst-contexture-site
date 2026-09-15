@@ -17,8 +17,8 @@ target = "palimpsest/index.typ"
 label = "palimpsest"
 
 [[menus.main]]
-target = "equator/index.typ"
-label = "equator"
+target = "checkitoff/index.typ"
+label = "checkitoff"
 
 [[menus.main]]
 target = "colophon/index.typ"
@@ -129,37 +129,37 @@ title = "palimpsest"
   target = "palimpsest/ecosystem/index.typ"
 
 [[sidebar.section]]
-title = "equator"
+title = "checkitoff"
 
   [[sidebar.section.item]]
-  target = "equator/index.typ"
+  target = "checkitoff/index.typ"
 
   [[sidebar.section.item]]
-  target = "equator/quickstart/index.typ"
+  target = "checkitoff/quickstart/index.typ"
 
   [[sidebar.section.item]]
-  target = "equator/marking/index.typ"
+  target = "checkitoff/marking/index.typ"
 
   [[sidebar.section.item]]
-  target = "equator/diagnostics/index.typ"
+  target = "checkitoff/diagnostics/index.typ"
 
   [[sidebar.section.item]]
-  target = "equator/excerpts/index.typ"
+  target = "checkitoff/excerpts/index.typ"
 
   [[sidebar.section.item]]
-  target = "equator/page-breaks/index.typ"
+  target = "checkitoff/page-breaks/index.typ"
 
   [[sidebar.section.item]]
-  target = "equator/styling/index.typ"
+  target = "checkitoff/styling/index.typ"
 
   [[sidebar.section.item]]
-  target = "equator/project/index.typ"
+  target = "checkitoff/project/index.typ"
 
   [[sidebar.section.item]]
-  target = "equator/checklists/index.typ"
+  target = "checkitoff/checklists/index.typ"
 
   [[sidebar.section.item]]
-  target = "equator/ecosystem/index.typ"
+  target = "checkitoff/ecosystem/index.typ"
 
 [[sidebar.section]]
 title = "colophon"

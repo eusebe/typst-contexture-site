@@ -2,11 +2,11 @@
 #import "/_shared/manual.typ" as m
 
 #set document(title: [Ecosystem])
-#metadata((title: "Ecosystem", translation_key: "equator-ecosystem")) <website-metadata>
+#metadata((title: "Ecosystem", translation_key: "checkitoff-ecosystem")) <website-metadata>
 
 #title()
 
-Equator is one of the packages built on `contexture`, a small shared
+Checkitoff is one of the packages built on `contexture`, a small shared
 package none of them ship duplicated logic for. This chapter explains
 what `contexture` actually contributes, introduces the other packages
 built on it, and covers what changes when they're used together.
@@ -24,7 +24,7 @@ reinventing it each time:
 - an *anchor* primitive — mark a spot in one document, read it back
   from any other, by its real page;
 - a *shared compile pilot* (`bundle`) — the single point that ever
-  calls Typst's own `document(...)`, so that equator's grid and, say,
+  calls Typst's own `document(...)`, so that checkitoff's grid and, say,
   another package's own generated document can both be listed side by
   side without competing to own the compile;
 - two independent *compile flags*, `variant` and `preview` — `preview`
@@ -36,9 +36,9 @@ reinventing it each time:
   warning marker and `strict: true` in this manual are actually built
   from.
 
-`equator.check()` is a thin wrapper around `contexture`'s anchor
+`checkitoff.check()` is a thin wrapper around `contexture`'s anchor
 primitive; `checklist(...)` is a thin wrapper around its shared compile
-pilot. None of this needs to be learned to use equator as documented
+pilot. None of this needs to be learned to use checkitoff as documented
 above — it's mentioned here because the same foundation is shared with
 the packages below, which is what makes combining them straightforward
 rather than a rewrite. Full manual:
@@ -53,7 +53,7 @@ tracked-changes manuscript and a reviewer response letter that cites
 the manuscript's real pages — down to quoting the exact revised wording
 next to each response, if wanted. See
 #link("/palimpsest/")[palimpsest]'s own manual for the full picture;
-nothing in it is needed to use equator on its own.
+nothing in it is needed to use checkitoff on its own.
 
 = colophon: an audit of the composed manuscript
 
@@ -69,7 +69,7 @@ manual.
 `checklist(...)`, palimpsest's `letter(...)`, and colophon's `report()`
 are all just descriptions of a document to build, in the same sense
 `checklist(...)` was introduced in
-#link("/equator/project/")[Wiring a real project] — listing them
+#link("/checkitoff/project/")[Wiring a real project] — listing them
 together under the same `documents:` produces, from one compile, a
 manuscript, its tracked-changes companion, a reviewer response letter, a
 completed reporting-guideline grid, and a word-count audit, all citing
@@ -79,7 +79,7 @@ each other's real page numbers:
 #show: contexture.bundle.with(
   documents: (
     palimpsest.letter(exchanges: my-exchanges),
-    equator.checklist(checklist: checklists.consort),
+    checkitoff.checklist(checklist: checklists.consort),
     colophon.report(),
   ),
 )
@@ -104,7 +104,7 @@ palimpsest's `passage(...)`, most concretely:
   unrelated spans, the common case, have nothing to duplicate.
 
 For that second case, use the bare `check(id)` form instead
-(#link("/equator/marking/#the-point-marker-form-check-id-alone")[introduced
+(#link("/checkitoff/marking/#the-point-marker-form-check-id-alone")[introduced
 earlier]): `passage(...)` stays the one call that renders the text and
 carries its tracked-changes marks, `check(id)` only registers the
 item's coverage, with nothing left to duplicate or nest. `colophon`
@@ -129,10 +129,10 @@ contexture package." A shorter, cross-package summary also lives at
 - A word-count and inventory audit of the composed manuscript:
   #link("/colophon/")[colophon]'s manual.
 - Everything about reporting-guideline checklists on their own: the rest
-  of this manual, from #link("/equator/quickstart/")[Your first
+  of this manual, from #link("/checkitoff/quickstart/")[Your first
   checklist] onward.
 
 #m.chapter-nav(
-  prev: ("/equator/checklists/", "Built-in checklists"),
+  prev: ("/checkitoff/checklists/", "Built-in checklists"),
   next: none,
 )

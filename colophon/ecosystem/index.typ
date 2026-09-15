@@ -30,19 +30,19 @@ reinventing it each time:
   (#link("/colophon/project/")[Wiring a real project]) reads to build
   only from the one, real, plain compile.
 
-Unlike #link("/palimpsest/")[palimpsest] and #link("/equator/")[equator],
+Unlike #link("/palimpsest/")[palimpsest] and #link("/checkitoff/")[checkitoff],
 colophon doesn't use `contexture`'s *anchor* primitive at all — it has
 no per-passage markup to anchor, since it audits the composed document
 rather than passages an author marked. Full manual:
 #link("/contexture/")[contexture].
 
-= palimpsest and equator
+= palimpsest and checkitoff
 
 `palimpsest` tracks changes made to a manuscript during peer review and
 generates a reviewer response letter that cites the manuscript's real
-pages. `equator` fills in a reporting-guideline checklist (CONSORT,
+pages. `checkitoff` fills in a reporting-guideline checklist (CONSORT,
 PRISMA, SPIRIT, STARD, STROBE...), also citing the real pages. See
-#link("/palimpsest/")[palimpsest]'s and #link("/equator/")[equator]'s
+#link("/palimpsest/")[palimpsest]'s and #link("/checkitoff/")[checkitoff]'s
 own manuals for the full picture; nothing in either is needed to use
 colophon on its own — and, as
 #link("/colophon/word-counts/")[Word counts] already showed, colophon
@@ -58,14 +58,14 @@ just one more entry in the same array:
 #m.snippet("/packages/colophon/docs/manual-snippets/triple-combo.typ")
 
 One compile, four documents — the manuscript, palimpsest's response
-letter, equator's completed CONSORT grid, and colophon's audit, all
+letter, checkitoff's completed CONSORT grid, and colophon's audit, all
 from the same compile, all citing each other's real pages:
 
 #m.screenshot("/packages/colophon/docs/manual-snippets/triple-combo/audit-plain.png")
 
 #m.note(title: "colophon needs no nesting rule")[
   #link("/palimpsest/")[palimpsest]'s `passage()` and
-  #link("/equator/")[equator]'s `check()` both render their own
+  #link("/checkitoff/")[checkitoff]'s `check()` both render their own
   content, which is exactly why combining *them* needs two rules —
   never nest one's marking function inside the other's, and never call
   both as independent, rendering siblings on the same span (see
@@ -85,7 +85,7 @@ from the same compile, all citing each other's real pages:
 - Tracked manuscript revisions and reviewer response letters that cite
   the real pages: #link("/palimpsest/")[palimpsest]'s manual.
 - Reporting-guideline checklists that cite the real pages:
-  #link("/equator/")[equator]'s manual.
+  #link("/checkitoff/")[checkitoff]'s manual.
 - Everything about auditing a manuscript on its own: the rest of this
   manual, from #link("/colophon/quickstart/")[Quickstart] onward.
 

@@ -2,7 +2,7 @@
 #import "/_shared/manual.typ" as m
 
 #set document(title: [Built-in checklists])
-#metadata((title: "Built-in checklists", translation_key: "equator-checklists")) <website-metadata>
+#metadata((title: "Built-in checklists", translation_key: "checkitoff-checklists")) <website-metadata>
 
 #title()
 
@@ -30,7 +30,7 @@ variant, since that source bundles all three designs' wording into a
 single item per row, which doesn't fit the one-description-per-id shape
 every other checklist here uses.
 
-A checklist is plain data, as #link("/equator/quickstart/")[the
+A checklist is plain data, as #link("/checkitoff/quickstart/")[the
 quickstart] already showed — nothing about `check()`, `na()`,
 `render-checklist`, or the `checklist(...)` satellite is specific to
 CONSORT or to any built-in grid above. A project with its own house
@@ -38,6 +38,6 @@ checklist, or an emerging reporting guideline not built in yet, simply
 passes its own dictionary of the same shape in `checklist:` instead.
 
 #m.chapter-nav(
-  prev: ("/equator/project/", "Wiring a real project"),
-  next: ("/equator/ecosystem/", "Ecosystem"),
+  prev: ("/checkitoff/project/", "Wiring a real project"),
+  next: ("/checkitoff/ecosystem/", "Ecosystem"),
 )

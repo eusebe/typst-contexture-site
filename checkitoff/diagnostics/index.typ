@@ -2,18 +2,18 @@
 #import "/_shared/manual.typ" as m
 
 #set document(title: [Reading the grid])
-#metadata((title: "Reading the grid", translation_key: "equator-diagnostics")) <website-metadata>
+#metadata((title: "Reading the grid", translation_key: "checkitoff-diagnostics")) <website-metadata>
 
 #title()
 
 `render-checklist(checklist:, title: auto)` is the function that draws
 the grid you already saw in
-#link("/equator/quickstart/")[Your first checklist]: every official
+#link("/checkitoff/quickstart/")[Your first checklist]: every official
 item, grouped by section (and, when the checklist has one, by a
 mid-level group inside a section), each item's resolved page number(s),
 and a Diagnostics block listing anything that doesn't add up. In an
 ordinary project you never call it directly — the `checklist(...)`
-satellite (#link("/equator/project/")[Wiring a real project]) calls it
+satellite (#link("/checkitoff/project/")[Wiring a real project]) calls it
 for you — but it's exported on its own too, in case a project ever
 needs the grid outside the usual two-document setup.
 
@@ -27,7 +27,7 @@ than one grid.
 = Diagnostics
 
 Five situations are flagged, always in the same way, so `strict:` mode
-(#link("/equator/diagnostics/#strict-mode")[below]) catches every one of
+(#link("/checkitoff/diagnostics/#strict-mode")[below]) catches every one of
 them consistently:
 
 - an item never `check()`'d or `na()`'d at all — *not covered*;
@@ -46,9 +46,9 @@ including the two that have no single cell of their own (unknown id,
 duplicate `na()`), is listed underneath the table, in a dedicated
 Diagnostics block.
 
-#m.snippet("/packages/equator/docs/manual-snippets/bundle-diagnostics.typ")
+#m.snippet("/packages/checkitoff/docs/manual-snippets/bundle-diagnostics.typ")
 
-#m.screenshot("/packages/equator/docs/manual-snippets/bundle-diagnostics/checklist-plain.png")
+#m.screenshot("/packages/checkitoff/docs/manual-snippets/bundle-diagnostics/checklist-plain.png")
 
 This same example also shows what happens when consecutive items share
 one `topic` (t6/t7, both "Topic 4", under the "Sub-group demo" group):
@@ -99,6 +99,6 @@ without it, so an incomplete manuscript still produces a readable
 `checklist.pdf` with markers instead of refusing to build at all.
 
 #m.chapter-nav(
-  prev: ("/equator/marking/", "Marking items: check and na"),
-  next: ("/equator/excerpts/", "Quoting the real wording"),
+  prev: ("/checkitoff/marking/", "Marking items: check and na"),
+  next: ("/checkitoff/excerpts/", "Quoting the real wording"),
 )

@@ -58,6 +58,6 @@ alongside a PDF version
 = Combining with other packages
 
 `palimpsest`'s `letter(...)` is just a description of a document to
-build — it combines cleanly with #link("/equator/")[equator]'s
+build — it combines cleanly with #link("/checkitoff/")[checkitoff]'s
 `checklist(...)` and #link("/colophon/")[colophon]'s `report(...)` in
 the same compile. See #link("/combining/")[Combining packages].

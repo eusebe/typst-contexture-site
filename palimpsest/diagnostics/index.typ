@@ -43,7 +43,7 @@ trigger.
 parameter, see #link("/palimpsest/project/")[Wiring a real project]
 below — turns every one of these into a hard compile error, in both
 modes, for palimpsest *and* any other package sharing the same bundle
-(equator's checklist diagnostics included, if one is listed too):
+(checkitoff's checklist diagnostics included, if one is listed too):
 
 ```typ
 #show: contexture.bundle.with(strict: true, ...)

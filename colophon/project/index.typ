@@ -70,7 +70,7 @@ against `@preview/charged-ieee`'s two-column layout instead.
 
 = applicable: only the one, real, plain compile
 
-Like #link("/equator/project/")[equator's `checklist(...)`], `report()`
+Like #link("/checkitoff/project/")[checkitoff's `checklist(...)`], `report()`
 is only ever built from the single, real, plain compile —
 `applicable: () => contexture.variant() == "plain" and not
 contexture.preview()`. A `preview`/non-`"plain"`-`variant` overlay from

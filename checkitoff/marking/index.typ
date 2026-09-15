@@ -2,7 +2,7 @@
 #import "/_shared/manual.typ" as m
 
 #set document(title: [Marking items: check and na])
-#metadata((title: "Marking items: check and na", translation_key: "equator-marking")) <website-metadata>
+#metadata((title: "Marking items: check and na", translation_key: "checkitoff-marking")) <website-metadata>
 
 #title()
 
@@ -20,15 +20,15 @@
 A minimal, standalone example — no bundle involved, just `check()` in a
 plain file:
 
-#m.snippet("/packages/equator/docs/manual-snippets/marks-check-basics.typ")
+#m.snippet("/packages/checkitoff/docs/manual-snippets/marks-check-basics.typ")
 
 Compiled once, plain:
 
-#m.screenshot("/packages/equator/docs/manual-snippets/marks-check-basics/result-plain.png")
+#m.screenshot("/packages/checkitoff/docs/manual-snippets/marks-check-basics/result-plain.png")
 
 Once more with `--input preview=true`:
 
-#m.screenshot("/packages/equator/docs/manual-snippets/marks-check-basics/result-preview.png")
+#m.screenshot("/packages/checkitoff/docs/manual-snippets/marks-check-basics/result-preview.png")
 
 `check()` doesn't need to know which checklist is active, or even that
 one exists — it just anchors `body` under `id`; whether that id means
@@ -42,7 +42,7 @@ An item can legitimately be checked more than once — a method described
 once and its rationale discussed elsewhere, say — in which case the
 grid lists every page it was found on. The one deliberate exception is
 a single passage that straddles a page break: see
-#link("/equator/page-breaks/")[The page-break idiom] for the recommended
+#link("/checkitoff/page-breaks/")[The page-break idiom] for the recommended
 way to get a correct, two-page citation for that case specifically.
 
 `na()` is the explicit counterpart to `check()`: some items genuinely
@@ -66,37 +66,37 @@ For exactly that case, `check(id)` — one argument, no body — only ever
 registers the item's location; it never renders anything, ever. `body`
 must already be displayed by something else.
 
-#m.snippet("/packages/equator/docs/manual-snippets/marks-check-point-marker.typ")
+#m.snippet("/packages/checkitoff/docs/manual-snippets/marks-check-point-marker.typ")
 
 Compiled once, plain — the sentence appears exactly once, exactly as
 written:
 
-#m.screenshot("/packages/equator/docs/manual-snippets/marks-check-point-marker/manuscript-plain.png")
+#m.screenshot("/packages/checkitoff/docs/manual-snippets/marks-check-point-marker/manuscript-plain.png")
 
 Once more with `--input preview=true` — a small superscripted id, but
 no highlight box: there's no body here to wrap one around, but the id
 is still shown as a drafting aid:
 
-#m.screenshot("/packages/equator/docs/manual-snippets/marks-check-point-marker/manuscript-preview.png")
+#m.screenshot("/packages/checkitoff/docs/manual-snippets/marks-check-point-marker/manuscript-preview.png")
 
 The item still resolves correctly in `checklist.pdf`, exactly as if it
 had been written `check(id, body)`. The only function that notices the
 difference is `excerpt-of`
-(#link("/equator/excerpts/")[Quoting the real wording]): with no body to
+(#link("/checkitoff/excerpts/")[Quoting the real wording]): with no body to
 quote, an occurrence marked this way simply contributes no excerpt,
 which is the honest answer, not an error. The "blank content" diagnostic
 never fires on it either — a missing body here is the deliberate shape
 of this form, not the mistake it would be for `check(id)[]`.
 
 #m.note[
-  The most common reason to reach for this form — combining equator
+  The most common reason to reach for this form — combining checkitoff
   with a package that already renders the text, such as
   `@preview/palimpsest`'s tracked-changes marks — is covered in full in
-  the closing chapter, #link("/equator/ecosystem/")[Equator in the
+  the closing chapter, #link("/checkitoff/ecosystem/")[Checkitoff in the
   contexture ecosystem].
 ]
 
 #m.chapter-nav(
-  prev: ("/equator/quickstart/", "Your first checklist"),
-  next: ("/equator/diagnostics/", "Reading the grid"),
+  prev: ("/checkitoff/quickstart/", "Your first checklist"),
+  next: ("/checkitoff/diagnostics/", "Reading the grid"),
 )

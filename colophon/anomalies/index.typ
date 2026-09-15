@@ -19,7 +19,7 @@ judgment to you.
   equation in the manuscript's span that no `ref`/`@label` anywhere in
   the *whole bundle* ever targets — deliberately bundle-wide on the
   referencing side (a figure could legitimately be cited from another
-  package's own satellite, an equator checklist excerpt say), only the
+  package's own satellite, an checkitoff checklist excerpt say), only the
   candidate labels themselves are scoped to the manuscript.
 / `bib-keys(path)` / `uncited-references(path, start, end)`: every
   entry a `.bib` file defines that no `@key`/`cite(<key>)` in the

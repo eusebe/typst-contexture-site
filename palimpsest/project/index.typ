@@ -15,7 +15,7 @@ own `document(...)`; it owns the manuscript, and builds one more
 document per entry listed under `documents:`. Palimpsest's own
 `letter(...)` doesn't build anything by itself — it just *describes*
 the response letter as one such entry. That split is what lets a
-second package add its own document the same way — equator's
+second package add its own document the same way — checkitoff's
 reporting-guideline checklist, say — by adding a second entry to the
 same list, with no risk of two competing functions each trying to call
 `document(...)` on their own (the closing chapter,
@@ -147,7 +147,7 @@ typst compile --features bundle --format bundle --input only= main.typ
 
 Naming a satellite explicitly (`--input only=response`) restricts the
 compile to just that one, still subject to its own rules (a satellite
-gated on something else, like equator's checklist below, doesn't get
+gated on something else, like checkitoff's checklist below, doesn't get
 forced on just because it's named here).
 
 What each command writes, with `exchanges` set:

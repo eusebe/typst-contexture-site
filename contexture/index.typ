@@ -65,5 +65,5 @@ is also available in the
 = Built on `contexture`
 
 - #link("/palimpsest/")[palimpsest] — manuscript revisions and a reviewer response letter that cites the real pages.
-- #link("/equator/")[equator] — reporting-guideline checklists filled in with the real pages.
+- #link("/checkitoff/")[checkitoff] — reporting-guideline checklists filled in with the real pages.
 - #link("/colophon/")[colophon] — a companion audit of the composed manuscript.

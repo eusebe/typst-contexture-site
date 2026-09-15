@@ -32,7 +32,7 @@ reinventing it each time:
   reads `variant` for its own clean/tracked distinction
   (`--input variant=tracked` throughout this manual); `preview` is a
   second, independent axis a package can use for its own purposes
-  (equator uses it for its `check()` highlighting, below);
+  (checkitoff uses it for its `check()` highlighting, below);
 - a shared *diagnostics* mechanism and `strict` flag — what every
   warning box and `strict: true` in this manual are actually built
   from.
@@ -45,13 +45,13 @@ foundation is shared with the packages below, which is what makes
 combining them straightforward rather than a rewrite. Full manual:
 #link("/contexture/")[contexture].
 
-= equator: reporting-guideline checklists
+= checkitoff: reporting-guideline checklists
 
-`equator` is a sibling package for a different problem: filling in a
+`checkitoff` is a sibling package for a different problem: filling in a
 reporting-guideline grid (CONSORT, PRISMA, SPIRIT, STARD, STROBE...)
 automatically, by marking where each item is answered in the manuscript
 (`check(id, body)`) and letting the grid cite the real page each one
-landed on. See #link("/equator/")[equator]'s own manual for the full
+landed on. See #link("/checkitoff/")[checkitoff]'s own manual for the full
 picture; nothing in it is needed to use palimpsest on its own.
 
 = colophon: an audit of the composed manuscript
@@ -67,32 +67,32 @@ palimpsest's own marks. See #link("/colophon/")[colophon]'s own manual.
 Because `contexture.bundle` — not palimpsest — owns `documents:`,
 adding a second package's own document alongside `letter(...)` is just
 a second entry in the same array, not a second engine to reconcile.
-Here, a CONSORT reporting checklist (`@preview/equator`) is produced
+Here, a CONSORT reporting checklist (`@preview/checkitoff`) is produced
 from the *same* manuscript, in the *same* compile, as the reviewer
 response letter:
 
-#m.snippet("/packages/palimpsest/docs/manual-snippets/contexture-with-equator.typ")
+#m.snippet("/packages/palimpsest/docs/manual-snippets/contexture-with-checkitoff.typ")
 
 `manuscript.pdf` — item 1 is unrelated to the reviewer exchange, so
-`equator.check(...)` just renders its own text at its own spot,
+`checkitoff.check(...)` just renders its own text at its own spot,
 independently of `passage(...)`; item 2's text, though, genuinely *is*
 the reviewer exchange, so it's rendered exactly once, by `passage(...)`
 alone (see below for why):
 
-#m.screenshot("/packages/palimpsest/docs/manual-snippets/contexture-with-equator/manuscript-clean.png")
+#m.screenshot("/packages/palimpsest/docs/manual-snippets/contexture-with-checkitoff/manuscript-clean.png")
 
 `response.pdf`, citing the manuscript's real page as always:
 
-#m.screenshot("/packages/palimpsest/docs/manual-snippets/contexture-with-equator/response-clean.png")
+#m.screenshot("/packages/palimpsest/docs/manual-snippets/contexture-with-checkitoff/response-clean.png")
 
-`checklist.pdf`, generated entirely by equator, citing the same
+`checklist.pdf`, generated entirely by checkitoff, citing the same
 manuscript page for both items regardless of which form of `check()`
 produced each one:
 
-#m.screenshot("/packages/palimpsest/docs/manual-snippets/contexture-with-equator/checklist-clean.png")
+#m.screenshot("/packages/palimpsest/docs/manual-snippets/contexture-with-checkitoff/checklist-clean.png")
 
 Three documents, one manuscript, one compile — and
-`--input variant=tracked`/`--input preview=true` (equator's own preview
+`--input variant=tracked`/`--input preview=true` (checkitoff's own preview
 flag, for its `check()` anchors) both still work exactly as shown
 throughout this manual, independently of whichever other packages are
 listed in `documents:`.
@@ -127,7 +127,7 @@ instead of `check(id, body)`: same metadata, same page resolution in
 `checklist.pdf`, but it renders nothing but a small superscripted id
 under `--input preview=true` — nothing that duplicates or nests.
 `passage(...)` stays the one call that actually prints the text and
-handles its tracked-mode marks; `check(id)` just tells equator where to
+handles its tracked-mode marks; `check(id)` just tells checkitoff where to
 find it. `colophon` needs no such rule at all — it never renders
 anything inside the manuscript body, so nothing to nest or duplicate
 ever arises with it.
@@ -137,7 +137,7 @@ packages whose marking functions both render content over the same
 span, present or future — the fix is the same shape every time, one
 call renders, any other call that needs to know about that same span
 registers via its own package's bare, non-rendering form instead of its
-normal marking call (equator's own `check` folds both shapes into one
+normal marking call (checkitoff's own `check` folds both shapes into one
 function, the same way palimpsest's own `passage(anchors, body)`/`passage(body)`
 already does). A shorter, cross-package summary of both rules also
 lives at #link("/combining/")[Combining packages].
@@ -148,7 +148,7 @@ lives at #link("/combining/")[Combining packages].
   revisions or checklists attached: #link("/contexture/")[contexture]'s
   manual.
 - Reporting-guideline checklists that cite the real pages:
-  #link("/equator/")[equator]'s manual.
+  #link("/checkitoff/")[checkitoff]'s manual.
 - A word-count and inventory audit of the composed manuscript:
   #link("/colophon/")[colophon]'s manual.
 - Everything about manuscript revisions and reviewer letters on their

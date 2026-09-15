@@ -2,7 +2,7 @@
 #import "/_shared/manual.typ" as m
 
 #set document(title: [Wiring a real project])
-#metadata((title: "Wiring a real project", translation_key: "equator-project")) <website-metadata>
+#metadata((title: "Wiring a real project", translation_key: "checkitoff-project")) <website-metadata>
 
 #title()
 
@@ -25,7 +25,7 @@ everything together from a small `main.typ`:
 `checklist(checklist:, grid-template: auto)` is what describes the
 checklist for `contexture.bundle` to build. `checklist:` has no default,
 for the same reason as `render-checklist`'s own `checklist:`
-(#link("/equator/diagnostics/")[Reading the grid]). `grid-template:`
+(#link("/checkitoff/diagnostics/")[Reading the grid]). `grid-template:`
 (`auto` = leave it alone) is applied to the grid separately from the
 manuscript's own `template:` — most journals want CONSORT's own
 official table layout on the checklist page, not the manuscript's own
@@ -57,6 +57,6 @@ mode is for — only a genuine error in the manuscript itself (an
 undefined function, a malformed table, ...) does.
 
 #m.chapter-nav(
-  prev: ("/equator/styling/", "Styling the grid"),
-  next: ("/equator/checklists/", "Built-in checklists"),
+  prev: ("/checkitoff/styling/", "Styling the grid"),
+  next: ("/checkitoff/checklists/", "Built-in checklists"),
 )

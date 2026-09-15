@@ -66,5 +66,5 @@ its reviewer letter — live in the repository:
 
 `colophon`'s `report(...)` combines cleanly with
 #link("/palimpsest/")[palimpsest]'s `letter(...)` and
-#link("/equator/")[equator]'s `checklist(...)` in the same compile. See
+#link("/checkitoff/")[checkitoff]'s `checklist(...)` in the same compile. See
 #link("/combining/")[Combining packages].

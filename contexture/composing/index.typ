@@ -10,13 +10,13 @@ Everything in this manual so far is self-contained — no example so far
 needed anything beyond `contexture` itself. In practice, `contexture`
 is meant as a shared foundation that several packages build on at
 once. #link("/palimpsest/")[palimpsest] (manuscript revision letters)
-and #link("/equator/")[equator] (reporting-guideline checklists) are
+and #link("/checkitoff/")[checkitoff] (reporting-guideline checklists) are
 two such packages, published independently of each other and of
 `contexture`, neither aware the other exists. Combining them needs
 nothing beyond listing both of their satellites under the same
 `documents:` — the scenario the whole design exists for:
 
-#m.snippet("/packages/contexture/docs/manual-snippets/bundle-combo-palimpsest-equator.typ")
+#m.snippet("/packages/contexture/docs/manual-snippets/bundle-combo-palimpsest-checkitoff.typ")
 
 One compile, four ways, exactly like
 #link("/contexture/variant-preview/")[Two independent compile axes]
@@ -37,7 +37,7 @@ demonstration:
 The last compile shows both packages' overlays together, in the same
 document, each independent of the other:
 
-#m.screenshot("/packages/contexture/docs/manual-snippets/bundle-combo-palimpsest-equator/manuscript-tracked-preview.png")
+#m.screenshot("/packages/contexture/docs/manual-snippets/bundle-combo-palimpsest-checkitoff/manuscript-tracked-preview.png")
 
 Building a marking function that renders its own content, the way
 `passage()` and `check()` both do here, raises exactly one extra
@@ -50,10 +50,10 @@ span (one of them needs a body-free form instead, to register coverage
 without printing the text twice). Both rules, why they're necessary,
 and the exact two-shape pattern (`check(id)` vs. `check(id, body)`)
 that resolves the second one, are documented where they belong: in
-palimpsest's and equator's own manuals, each under a section called
+palimpsest's and checkitoff's own manuals, each under a section called
 "Combining with another contexture package"
 (#link("/palimpsest/ecosystem/#combining-the-two")[palimpsest],
-#link("/equator/ecosystem/#combining-checklist-with-the-others")[equator]),
+#link("/checkitoff/ecosystem/#combining-checklist-with-the-others")[checkitoff]),
 and summarized once, package-agnostically, at
 #link("/combining/")[Combining packages].
 
@@ -65,7 +65,7 @@ with no other package installed. For what to build with it:
 - Manuscript revisions and a reviewer response letter that cites the
   real pages: #link("/palimpsest/")[palimpsest]'s own manual.
 - Reporting-guideline checklists (CONSORT, PRISMA, SPIRIT, STARD,
-  STROBE) that cite the real pages: #link("/equator/")[equator]'s own
+  STROBE) that cite the real pages: #link("/checkitoff/")[checkitoff]'s own
   manual.
 - A word-count and inventory audit of the composed manuscript, needing
   no per-passage markup at all: #link("/colophon/")[colophon]'s own

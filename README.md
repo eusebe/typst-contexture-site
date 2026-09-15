@@ -9,7 +9,7 @@ static-site generator that compiles Typst source directly to HTML.
 ## Structure
 
 - `index.typ` — ecosystem overview.
-- `contexture/`, `palimpsest/`, `equator/`, `colophon/` — one landing
+- `contexture/`, `palimpsest/`, `checkitoff/`, `colophon/` — one landing
   page per package.
 - `combining/` — using more than one package in the same compile.
 - `packages/*` — git submodules pointing at each package's own
