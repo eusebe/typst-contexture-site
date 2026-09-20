@@ -4,7 +4,9 @@
 #set document(title: [contexture])
 #metadata((title: "Overview", translation_key: "home")) <website-metadata>
 
-#title[#box(m.inline-logo("contexture", css-height: "1em", pdf-height: 22pt)) contexture]
+#m.logo("contexture")
+
+#title()
 
 *contexture* is a small Typst engine for producing several
 cross-referencing documents from one compile — a manuscript plus
