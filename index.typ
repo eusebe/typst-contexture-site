@@ -1,9 +1,10 @@
 #import "/.calepin/calepin.typ" as calepin
+#import "/_shared/manual.typ" as m
 
 #set document(title: [contexture])
 #metadata((title: "Overview", translation_key: "home")) <website-metadata>
 
-#title()
+#title[#box(m.inline-logo("contexture", css-height: "1em", pdf-height: 22pt)) contexture]
 
 *contexture* is a small Typst engine for producing several
 cross-referencing documents from one compile — a manuscript plus

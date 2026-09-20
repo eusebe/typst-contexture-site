@@ -54,19 +54,43 @@
   if next != none [#link(calepin.url(next.at(0)))[#next.at(1)] #sym.arrow.r] else [],
 )
 
-// A package's mark, centered above its landing page's #title(). Single
-// source: /assets/logo-<name>.svg, kept in sync with the whole
-// ecosystem's other logos by contexture-ecosystem/sync-logos.sh — see
-// that script rather than replacing this file by hand. `align(center,
-// ...)` is silently ignored by HTML export (unlike `table`'s own cell
-// `align`, which does survive it, same reasoning as `chapter-nav`
+// An ecosystem mark, live rather than baked into the page as a raster/
+// data-URI image: `image()` would embed it as a fixed-color
+// `<img src="data:...">`, which can never react to the site's own
+// dark-mode toggle. A raw `<img data-inline-svg="1">` instead gets
+// swapped for the real inline <svg> at runtime by the theme's own
+// site.js (the same mechanism the header's own `logo:` config already
+// relies on) — which is what lets the dark-mode rule baked into each
+// file by contexture-ecosystem/sync-logos.sh actually fire. `html.elem`
+// only exists under HTML export (a plain `#import`-level `unknown
+// variable: html` otherwise) — this site also renders a PDF twin of
+// every page (`pdf = true` in calepin.toml), so the paged target needs
+// its own, ordinary `image()` fallback; `css-height` (a CSS length
+// string — the inlining swap strips the `width`/`height` HTML
+// attributes but keeps `style` verbatim, so sizing has to go through
+// `style:`) and `pdf-height` (a Typst length) size the two independently
+// since a string and a Typst length aren't interchangeable.
+#let inline-logo(name, css-height: "90pt", pdf-height: 90pt) = if calepin._is-html() {
+  html.elem("img", attrs: (
+    "src": calepin.url("/assets/logo-" + name + ".svg"),
+    "alt": name,
+    "data-inline-svg": "1",
+    "style": "height: " + css-height + "; width: auto;",
+  ))
+} else {
+  image("/assets/logo-" + name + ".svg", height: pdf-height)
+}
+
+// A package's mark, centered above its landing page's #title(). `align(
+// center, ...)` is silently ignored by HTML export (unlike `table`'s own
+// cell `align`, which does survive it, same reasoning as `chapter-nav`
 // above), hence the one-cell table instead of a plain `align` call.
-#let logo(name, width: 90pt) = table(
+#let logo(name, css-height: "90pt", pdf-height: 90pt) = table(
   columns: (1fr,),
   align: center,
   stroke: none,
   inset: 0pt,
-  image("/assets/logo-" + name + ".svg", width: width),
+  inline-logo(name, css-height: css-height, pdf-height: pdf-height),
 )
 
 // A labelled aside for a caveat, a design note, or a "why" digression —

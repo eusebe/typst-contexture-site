@@ -1,7 +1,7 @@
 title = "contexture"
 description = "A small Typst engine for producing several cross-referencing documents from one compile, and the packages built on it: manuscript revisions, reporting-guideline checklists, and a manuscript audit."
 theme = "calepin"
-logo = "assets/logo-contexture.svg"
+logo = "assets/logo-contexture-lockup.svg"
 logo-alt = "contexture"
 favicon = "assets/logo-contexture.svg"
 

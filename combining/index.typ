@@ -102,13 +102,29 @@ instead of its normal marking call.
 = A full worked example
 
 All three packages together, on the same manuscript, in one compile —
-a reviewer response letter, a completed CONSORT grid, and a word-count
-audit:
+a tracked-changes revision, a reviewer response letter, a completed
+CONSORT grid, and a word-count audit:
 
 #m.snippet("/packages/colophon/docs/manual-snippets/triple-combo.typ")
 
-`audit.pdf`, reading straight through palimpsest's own marks — the word
-count matches the *clean*, submitted manuscript, not the tracked one:
+`manuscript.pdf`, compiled plain — the real, submitted text, with
+nothing of the reviewer exchange or the checklist visible:
+
+#m.screenshot("/packages/colophon/docs/manual-snippets/triple-combo/manuscript-plain-1.png")
+
+The same compile again with `--input variant=tracked` shows exactly
+what changed, colored by reviewer:
+
+#m.screenshot("/packages/colophon/docs/manual-snippets/triple-combo/manuscript-tracked-1.png")
+
+`response.pdf`, from the very same compile, citing the manuscript's
+real pages:
+
+#m.screenshot("/packages/colophon/docs/manual-snippets/triple-combo/response-plain.png", width: 75%)
+
+And `audit.pdf`, reading straight through palimpsest's own marks — the
+word count matches the *clean*, submitted manuscript, not the tracked
+one:
 
 #m.screenshot("/packages/colophon/docs/manual-snippets/triple-combo/audit-plain.png")
 
