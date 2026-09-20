@@ -1,7 +1,10 @@
 #import "/.calepin/calepin.typ" as calepin
+#import "/_shared/manual.typ" as m
 
 #set document(title: [contexture])
 #metadata((title: "contexture", translation_key: "contexture")) <website-metadata>
+
+#m.logo("contexture")
 
 #title()
 

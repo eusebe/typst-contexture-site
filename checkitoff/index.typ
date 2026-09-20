@@ -1,7 +1,10 @@
 #import "/.calepin/calepin.typ" as calepin
+#import "/_shared/manual.typ" as m
 
 #set document(title: [checkitoff])
 #metadata((title: "checkitoff", translation_key: "checkitoff")) <website-metadata>
+
+#m.logo("checkitoff")
 
 #title()
 

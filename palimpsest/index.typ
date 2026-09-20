@@ -1,7 +1,10 @@
 #import "/.calepin/calepin.typ" as calepin
+#import "/_shared/manual.typ" as m
 
 #set document(title: [palimpsest])
 #metadata((title: "palimpsest", translation_key: "palimpsest")) <website-metadata>
+
+#m.logo("palimpsest")
 
 #title()
 

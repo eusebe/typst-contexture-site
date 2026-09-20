@@ -54,6 +54,21 @@
   if next != none [#link(calepin.url(next.at(0)))[#next.at(1)] #sym.arrow.r] else [],
 )
 
+// A package's mark, centered above its landing page's #title(). Single
+// source: /assets/logo-<name>.svg, kept in sync with the whole
+// ecosystem's other logos by contexture-ecosystem/sync-logos.sh — see
+// that script rather than replacing this file by hand. `align(center,
+// ...)` is silently ignored by HTML export (unlike `table`'s own cell
+// `align`, which does survive it, same reasoning as `chapter-nav`
+// above), hence the one-cell table instead of a plain `align` call.
+#let logo(name, width: 90pt) = table(
+  columns: (1fr,),
+  align: center,
+  stroke: none,
+  inset: 0pt,
+  image("/assets/logo-" + name + ".svg", width: width),
+)
+
 // A labelled aside for a caveat, a design note, or a "why" digression —
 // calepin's own themed callout component (same reasoning as
 // `screenshot` above: a hand-rolled `block(stroke: (left: ...))` is

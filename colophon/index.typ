@@ -4,6 +4,8 @@
 #set document(title: [colophon])
 #metadata((title: "colophon", translation_key: "colophon")) <website-metadata>
 
+#m.logo("colophon")
+
 #title()
 
 #m.side-by-side(
