@@ -122,6 +122,12 @@ real pages:
 
 #m.screenshot("/packages/colophon/docs/manual-snippets/triple-combo/response-plain.png", width: 75%)
 
+`checklist.pdf`, checkitoff's own CONSORT grid, citing the same
+manuscript pages — unrelated to palimpsest's `passage()` here (see
+"What works" above for the one case where they'd need to coordinate):
+
+#m.screenshot("/packages/colophon/docs/manual-snippets/triple-combo/checklist-plain-1.png")
+
 And `audit.pdf`, reading straight through palimpsest's own marks — the
 word count matches the *clean*, submitted manuscript, not the tracked
 one:
