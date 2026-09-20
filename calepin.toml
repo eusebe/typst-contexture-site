@@ -42,13 +42,10 @@ label = "Made with Calepin"
 [sidebar]
 
 [[sidebar.section]]
-title = "Ecosystem"
+title = "Overview"
 
   [[sidebar.section.item]]
   target = "index.typ"
-
-  [[sidebar.section.item]]
-  target = "combining/index.typ"
 
 [[sidebar.section]]
 title = "palimpsest"
@@ -157,6 +154,12 @@ title = "colophon"
 
   [[sidebar.section.item]]
   target = "colophon/ecosystem/index.typ"
+
+[[sidebar.section]]
+title = "Combining"
+
+  [[sidebar.section.item]]
+  target = "combining/index.typ"
 
 [[sidebar.section]]
 title = "contexture"
