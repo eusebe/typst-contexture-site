@@ -57,8 +57,8 @@ the Topic cell spans both rows instead of repeating.
 = Strict mode
 
 By default, every diagnostic above is a soft, visible marker — easy to
-spot while drafting, but it won't fail a build on its own. `strict:
-true`, passed to `contexture.bundle(...)` (not to `checklist(...)` —
+spot while drafting, but it won't fail a build on its own.
+`strict: true`, passed to `contexture.bundle(...)` (not to `checklist(...)` —
 strictness is a property of the whole compile, so it covers any other
 `contexture`-based package sharing it too), turns every one of them into
 a hard compile error instead:

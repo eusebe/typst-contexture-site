@@ -67,8 +67,9 @@ Response:
 
 `parens: false` drops the parentheses; `verb: none` additionally drops
 "modified on"/"see", leaving only "p. 3" (or "p. 3 and p. 7" for two
-pages) — for a sentence, like `See #pinpoint(<r>, parens: false, verb: none)
-for the updated wording.`, that already supplies its own verb. The two
+pages) — for a sentence, like
+`See #pinpoint(<r>, parens: false, verb: none) for the updated wording.`,
+that already supplies its own verb. The two
 are independent: `parens: false` alone still says "modified on p. 3"
 without the parentheses; `verb: none` alone keeps the parentheses
 around a bare page number. Neither one alone fits every sentence shape

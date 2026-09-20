@@ -9,10 +9,11 @@
 An abstract is routinely capped by its own, independent word limit —
 separate from the manuscript body's own. Getting a count for it
 separately needs one small, deliberate step, because of *how* most
-templates actually take an abstract: as a `template.with(abstract:
-...)` parameter, evaluated and handed to the template *before*
-`instrument()`'s own `template:` ever runs — never part of the
-manuscript `body` colophon's word count walks at all. There's no
+templates actually take an abstract: as a
+`template.with(abstract: ...)` parameter, evaluated and handed to the
+template *before* `instrument()`'s own `template:` ever runs — never
+part of the manuscript `body` colophon's word count walks at all.
+There's no
 generic way to detect "this content is the abstract" after the fact,
 so colophon asks for one explicit marker instead:
 

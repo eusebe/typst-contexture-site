@@ -11,8 +11,8 @@ version showing every edit, and a response letter that cites the
 manuscript's own real page and figure numbers — automatically, and
 always in sync.
 
-You mark changes once, inline, in the manuscript itself. Two `typst
-compile` commands then produce all of it.
+You mark changes once, inline, in the manuscript itself. Two
+`typst compile` commands then produce all of it.
 
 = The problem
 

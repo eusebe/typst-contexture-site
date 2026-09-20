@@ -52,9 +52,9 @@ here is strictly more correct than re-deriving it.
   document in the bundle — `ref()`'s cross-document rendering from
   `audit.pdf` can lose that formatting. The underlying number and page
   stay correct; only the exact punctuation can differ, and only for a
-  template with a numbering scheme this exotic — an ordinary `Figure
-  1`/`Table 1`, everything shown elsewhere in this manual, isn't
-  affected.
+  template with a numbering scheme this exotic — an ordinary
+  `Figure 1`/`Table 1`, everything shown elsewhere in this manual,
+  isn't affected.
 ]
 
 An unlabelled figure has no `ref` to lean on, so it still falls back to

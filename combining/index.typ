@@ -59,10 +59,10 @@ the other two exist.
   content independently; nothing to coordinate.
 - *Compile flags stay independent.* `palimpsest`'s `variant` and
   `checkitoff`'s `preview` are two different axes, read from the same
-  shared `--input`, and compose freely — `--input variant=tracked
-  --input preview=true` together produce the tracked manuscript with
-  checkitoff's drafting overlay on top, regardless of which other
-  packages are listed in `documents:`.
+  shared `--input`, and compose freely —
+  `--input variant=tracked --input preview=true` together produce the
+  tracked manuscript with checkitoff's drafting overlay on top,
+  regardless of which other packages are listed in `documents:`.
 - *The bare, non-rendering form of a marking function*, on a span
   already rendered by another package — `checkitoff.check(id)` (no
   second argument) registers a checklist item's coverage without

@@ -72,8 +72,8 @@ against `@preview/charged-ieee`'s two-column layout instead.
 
 Like #link(calepin.url("/checkitoff/project/"))[checkitoff's `checklist(...)`], `report()`
 is only ever built from the single, real, plain compile —
-`applicable: () => contexture.variant() == "plain" and not
-contexture.preview()`. A `preview`/non-`"plain"`-`variant` overlay from
+`applicable: () => contexture.variant() == "plain" and not contexture.preview()`.
+A `preview`/non-`"plain"`-`variant` overlay from
 another `contexture`-based package sharing the same bundle can shift
 page breaks, so a report built from either could cite a page count
 that doesn't match the manuscript actually being submitted.
