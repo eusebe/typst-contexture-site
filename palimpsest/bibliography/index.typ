@@ -38,7 +38,7 @@ unresolvable references behind.
   and numbered independently from the manuscript's own.
 
 A real project's three-file shape (`main.typ`/`manuscript.typ`/`responses.typ`,
-covered in #link("/palimpsest/project/")[Wiring a real project] below)
+covered in #link(calepin.url("/palimpsest/project/"))[Wiring a real project] below)
 — `manuscript.typ`:
 
 #m.snippet("/packages/palimpsest/docs/manual-snippets/shared/biblio-letter/manuscript.typ")

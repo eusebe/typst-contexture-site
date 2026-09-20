@@ -34,7 +34,7 @@ belongs to `contexture`, the shared engine imported alongside it above.
 Nothing about that needs to be understood to use the functions in the
 chapters below; it only becomes relevant once a real, multi-file
 project gets wired together, in
-#link("/palimpsest/project/")[Wiring a real project] further down.
+#link(calepin.url("/palimpsest/project/"))[Wiring a real project] further down.
 
 #m.note(title: "About the examples in this manual")[
   Every example here is a single, self-contained file, compiled
@@ -89,7 +89,7 @@ letter, citing real pages:
 
 `response-tracked.pdf` comes out of the second compile the same way,
 automatically — more on exactly when and why a letter appears at all in
-#link("/palimpsest/project/#the-letter-automatically-matched-to-the-manuscript-you-actually-send")[The
+#link(calepin.url("/palimpsest/project/#the-letter-automatically-matched-to-the-manuscript-you-actually-send"))[The
 letter, automatically], further down.
 
 = Recommended workflow
@@ -106,7 +106,7 @@ letter, automatically], further down.
 + Read `response.pdf`/`response-tracked.pdf` for diagnostics — a
   numbered anchor with no matching exchange, an exchange answering
   nothing, an empty passage.
-  #link("/palimpsest/diagnostics/")[Diagnostics and strict mode] covers
+  #link(calepin.url("/palimpsest/diagnostics/"))[Diagnostics and strict mode] covers
   every case.
 + Before submission, compile once with `strict: true` — every remaining
   diagnostic becomes a hard compile error instead of a soft marker, a

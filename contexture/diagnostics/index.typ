@@ -25,7 +25,7 @@ directly at the fault location, which most Typst editors preview live.
   check per document. Normally set via `bundle(strict: true, ...)`, not
   called directly.
 
-`xref` (#link("/contexture/xref/")[below]) always passes
+`xref` (#link(calepin.url("/contexture/xref/"))[below]) always passes
 `always: true` — a broken cross-reference should never be silently
 invisible even in the real, submitted deliverable:
 

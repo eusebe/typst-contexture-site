@@ -12,9 +12,9 @@
   `passage(body)`, with no anchors, for a typo fix with no comment to
   answer. `anchors` — `<r1-2>`, `<e1>`, a co-author id like `<bob-3>`,
   or an array of these — gets a full chapter of its own next
-  (#link("/palimpsest/anchors/")[Anchors]); every example below either
+  (#link(calepin.url("/palimpsest/anchors/"))[Anchors]); every example below either
   omits it or uses it exactly as seen in the
-  #link("/palimpsest/quickstart/")[quickstart] above.
+  #link(calepin.url("/palimpsest/quickstart/"))[quickstart] above.
 / `add(body)`: marks `body` as newly added.
 / `del(body)`: marks `body` as removed.
 / `rep(old, new)`: a replacement in one call.

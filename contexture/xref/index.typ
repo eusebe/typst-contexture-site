@@ -17,7 +17,7 @@ on `contexture.anchor()` — a separate, narrower tool for the common
 case where a real Typst label already exists and only the page number
 needs adding.
 
-The example in the previous chapter, #link("/contexture/diagnostics/")[Diagnostics],
+The example in the previous chapter, #link(calepin.url("/contexture/diagnostics/"))[Diagnostics],
 already shows it in use: `xref`'s own broken-reference case is exactly
 what demonstrates `diagnose(..., always: true)` there.
 

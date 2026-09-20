@@ -10,7 +10,7 @@
   the manuscript's span — item (its kind and real, resolved number),
   caption, and page. `render-report(...)` calls this for the "Figures
   and tables" section; exposed on its own for the same reason as
-  #link("/colophon/word-counts/")[word-counts-by-section].
+  #link(calepin.url("/colophon/word-counts/"))[word-counts-by-section].
 
 Two figures, one table, and one figure with no caption at all:
 

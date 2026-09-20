@@ -11,16 +11,31 @@ companions that can cite its _real_, final page numbers, because
 they're composed together in the same pass, not two unrelated files
 that happen to sit next to each other.
 
-Three packages are built on it today:
+Three packages are built on it today, each solving one distinct,
+self-contained problem:
 
-- #link("/palimpsest/")[*palimpsest*] — manuscript revisions and a reviewer response letter that cites the real pages.
-- #link("/checkitoff/")[*checkitoff*] — reporting-guideline checklists (CONSORT, PRISMA, SPIRIT, STARD, STROBE) filled in automatically, with the real pages.
-- #link("/colophon/")[*colophon*] — a companion audit of the composed manuscript: word counts, reading time, a figure/table inventory — no per-passage markup required.
+- #link(calepin.url("/palimpsest/"))[*palimpsest*] — manuscript revisions and a reviewer response letter that cites the real pages.
+- #link(calepin.url("/checkitoff/"))[*checkitoff*] — reporting-guideline checklists (CONSORT, PRISMA, SPIRIT, STARD, STROBE) filled in automatically, with the real pages.
+- #link(calepin.url("/colophon/"))[*colophon*] — a companion audit of the composed manuscript: word counts, reading time, a figure/table inventory — no per-passage markup required.
 
-You'll rarely reach for `contexture` on its own — see its own page for
-what it actually provides, and #link("/combining/")[Combining packages]
-for what happens when two of the above end up touching the same
-manuscript.
+= Which one do I need?
+
+- *Responding to peer review, and want the letter to cite real pages?*
+  Start with #link(calepin.url("/palimpsest/"))[palimpsest].
+- *Filling in a CONSORT/PRISMA/SPIRIT/STARD/STROBE grid?* Start with
+  #link(calepin.url("/checkitoff/"))[checkitoff].
+- *Want a word count, reading time, or figure/table inventory of the
+  manuscript as actually laid out?* Start with
+  #link(calepin.url("/colophon/"))[colophon].
+- *Need two or more of the above on the same manuscript?* Each page
+  above is self-contained on its own — once you've got one working, see
+  #link(calepin.url("/combining/"))[Combining packages] for how to add
+  another, and the two rules that matter if they might touch the same
+  span of text.
+
+Whichever you pick, that page is the whole story: quickstart, the full
+feature set, and installation, with no detour through the others or
+through `contexture` itself required first.
 
 = Why several packages, not one
 
@@ -34,8 +49,9 @@ factors _only_ that mechanism out, once, so:
 - a manuscript can be revised (`palimpsest`), checked against CONSORT (`checkitoff`), and audited (`colophon`) — all three, in one compile, none of them aware of the other two's existence.
 - a future fourth package gets the same primitive for free, without any of the first three having to change.
 
-= Where to go next
-
-- New to the ecosystem? Start with whichever package solves the problem you actually have — #link("/palimpsest/")[palimpsest], #link("/checkitoff/")[checkitoff], or #link("/colophon/")[colophon] — each page is self-contained.
-- Combining two or more in the same compile? #link("/combining/")[Combining packages] covers the two rules that matter once they might touch the same span of text.
-- Curious what's underneath, or building a new package on the same mechanism? #link("/contexture/")[contexture] itself.
+You'll rarely reach for `contexture` on its own — it's the shared
+foundation the three packages above are built on, not a tool you use
+directly. Curious what's underneath, or building a new package on the
+same mechanism? #link(calepin.url("/contexture/"))[contexture]'s own
+manual, last on this site on purpose, covers it — with the same
+worked examples, from the other side.

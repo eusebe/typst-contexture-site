@@ -30,7 +30,7 @@ variant, since that source bundles all three designs' wording into a
 single item per row, which doesn't fit the one-description-per-id shape
 every other checklist here uses.
 
-A checklist is plain data, as #link("/checkitoff/quickstart/")[the
+A checklist is plain data, as #link(calepin.url("/checkitoff/quickstart/"))[the
 quickstart] already showed — nothing about `check()`, `na()`,
 `render-checklist`, or the `checklist(...)` satellite is specific to
 CONSORT or to any built-in grid above. A project with its own house

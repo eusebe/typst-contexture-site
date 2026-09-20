@@ -22,7 +22,7 @@ Three exclusions are always in effect, none of them configurable off:
   bracketed number once Typst lays a page out — real text, easy to
   miscount as prose. `extract-text` never sees that: it walks the
   manuscript's content *before* layout, captured by `instrument()`
-  (#link("/colophon/quickstart/")[Quickstart]) at the exact moment
+  (#link(calepin.url("/colophon/quickstart/"))[Quickstart]) at the exact moment
   `contexture.bundle` hands it to `template:`, where a citation is
   still a real, ignorable `ref`/`cite` node rather than rendered text.
 + *Table cells.* A `table()`'s cells have no space/paragraph-break
@@ -35,7 +35,7 @@ Three exclusions are always in effect, none of them configurable off:
   passed to `report(...)`.
 
 #m.note[
-  colophon reads through #link("/palimpsest/")[palimpsest]'s own marks
+  colophon reads through #link(calepin.url("/palimpsest/"))[palimpsest]'s own marks
   too — `add`/`del`/`rep`/`passage`/`touched` all render their actual
   output wrapped in a `context` block, even in clean mode, which is
   structurally invisible to colophon's pre-layout walk the same way a
@@ -57,7 +57,7 @@ untouched passage counted normally, and — since this example passes
 = Table cells versus captions, side by side
 
 The same manuscript that introduces
-#link("/colophon/inventory/")[the figure/table inventory] also makes
+#link(calepin.url("/colophon/inventory/"))[the figure/table inventory] also makes
 the table-cell exclusion visible: its results table holds the literal
 text "A" and "B", and the total word count is unaffected by them
 either way count-captions is set — worth keeping in mind when a word

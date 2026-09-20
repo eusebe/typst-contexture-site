@@ -18,9 +18,9 @@ the response letter as one such entry. That split is what lets a
 second package add its own document the same way — checkitoff's
 reporting-guideline checklist, say — by adding a second entry to the
 same list, with no risk of two competing functions each trying to call
-`document(...)` on their own (the closing chapter,
-#link("/palimpsest/ecosystem/#combining-the-two")[Palimpsest in the
-contexture ecosystem], walks through combining the two).
+`document(...)` on their own (see
+#link(calepin.url("/combining/"))[Combining packages] for a full worked
+example).
 
 A project is normally three files:
 
@@ -80,12 +80,12 @@ it, not specific to palimpsest):
   parameters, not `bundle`'s.
 / `documents`: an array of satellite descriptions — `letter(...)` here,
   possibly alongside others (see
-  #link("/palimpsest/ecosystem/#combining-the-two")[below]). `()`, the
+  #link(calepin.url("/combining/"))[Combining packages]). `()`, the
   default, produces the manuscript alone.
 / `strict`: `bundle(strict: true, ...)` turns every diagnostic raised
   by *any* listed satellite, and by palimpsest's own marks/exchanges,
   into a hard compile error — see
-  #link("/palimpsest/diagnostics/")[Diagnostics and strict mode] above.
+  #link(calepin.url("/palimpsest/diagnostics/"))[Diagnostics and strict mode] above.
 
 `letter(...)`'s own parameters, palimpsest-specific:
 
@@ -128,7 +128,7 @@ so neither compile can silently overwrite the other's output. Its
 excerpt shows the struck-through old wording next to the underlined new
 wording, because `pinpoint(excerpt: true)` with no explicit `mode:`
 always follows whichever mode the *current* compile is running under
-(see #link("/palimpsest/pinpoint/#page-only-by-default")[pinpoint]
+(see #link(calepin.url("/palimpsest/pinpoint/#page-only-by-default"))[pinpoint]
 above):
 
 #m.screenshot("/packages/palimpsest/docs/manual-snippets/revisions-exchanges-letter/response-tracked.png")

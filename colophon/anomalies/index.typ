@@ -25,7 +25,7 @@ judgment to you.
   entry a `.bib` file defines that no `@key`/`cite(<key>)` in the
   manuscript's span actually cites. `path` must be root-relative (a
   leading `/`, resolved against `--root`) — the same gotcha
-  #link("/palimpsest/bibliography/")[palimpsest's own
+  #link(calepin.url("/palimpsest/bibliography/"))[palimpsest's own
   `letter-bibliography`] already documents, for the same underlying
   reason: Typst resolves a path string against the file that calls the
   path-consuming builtin, not the file that wrote the literal.
@@ -53,7 +53,7 @@ file to point at:
   `sec-intro`, appears in "Labels never referenced." This holds across
   every example in this manual that has an orphan figure, not just
   this one: figure-inventory
-  (#link("/colophon/inventory/")[the previous chapter]) itself renders
+  (#link(calepin.url("/colophon/inventory/"))[the previous chapter]) itself renders
   each figure's number via `ref(label)`, and that call is, structurally,
   a real reference to that same label — so the moment a figure appears
   in the "Figures and tables" section above, it already counts as

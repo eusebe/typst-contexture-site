@@ -15,7 +15,7 @@
   Deliberately renders nothing on its own beyond the metadata: emitting
   it and deciding how (or whether) to render content around it are two
   different jobs, left to the caller, exactly as `term()`
-  (#link("/contexture/quickstart/")[the quickstart]) does both
+  (#link(calepin.url("/contexture/quickstart/"))[the quickstart]) does both
   explicitly.
 / `anchors(kind)`: every anchor of that kind, in document order, from
   *anywhere in the bundle* — including a document other than the one

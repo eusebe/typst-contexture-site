@@ -13,7 +13,7 @@
 #import "@preview/contexture:0.1.0": bundle
 ```
 
-Unlike #link("/palimpsest/")[palimpsest] and #link("/checkitoff/")[checkitoff],
+Unlike #link(calepin.url("/palimpsest/"))[palimpsest] and #link(calepin.url("/checkitoff/"))[checkitoff],
 colophon asks for no per-passage markup at all — no `check()`, no
 `passage()`. The one thing it does need is a small wrapping step on
 the manuscript's own `template:`, so it can find the manuscript's real
@@ -59,15 +59,15 @@ manual is one chapter per thing:
 + *Total word count, reading time, page count* — computed from the
   manuscript actually composed, not guessed from source text. Notice
   the citation `@smith2020` contributed nothing to the count. Covered
-  next, in #link("/colophon/word-counts/")[Word counts].
+  next, in #link(calepin.url("/colophon/word-counts/"))[Word counts].
 + *A figure/table inventory*, with the real, resolved number and page
   — here just "Figure 1", but the same mechanism holds under a
   template with its own exotic numbering scheme. Covered in
-  #link("/colophon/inventory/")[Figure and table inventory].
+  #link(calepin.url("/colophon/inventory/"))[Figure and table inventory].
 + No anomalies to report here — every label this manuscript defines is
   either referenced or has none to begin with, and its one citation is
   used. What that section looks like with something to actually flag
-  is #link("/colophon/anomalies/")[its own chapter].
+  is #link(calepin.url("/colophon/anomalies/"))[its own chapter].
 
 #m.chapter-nav(
   prev: ("/colophon/", "colophon overview"),

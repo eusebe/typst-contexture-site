@@ -8,7 +8,7 @@
 
 / `instrument(template: body => body)`: wraps a manuscript `template:`
   — the one wrapping step colophon asks for, covered already in
-  #link("/colophon/quickstart/")[Quickstart]. Captures the manuscript's
+  #link(calepin.url("/colophon/quickstart/"))[Quickstart]. Captures the manuscript's
   pre-layout body for the word count, and brackets the real, rendered
   output so every `query()` `report()` runs (page count, the figure
   inventory, orphan labels) stays scoped to just the manuscript
@@ -20,12 +20,12 @@
   `#show: contexture.bundle.with(...)`, alongside `instrument()`
   wrapping that same call's `template:`. `level:`/`count-captions:`
   are passed straight through to
-  #link("/colophon/word-counts/")[word-counts-by-section]; `wpm:`
+  #link(calepin.url("/colophon/word-counts/"))[word-counts-by-section]; `wpm:`
   controls the reading-time estimate; `bib:` turns on the
-  #link("/colophon/anomalies/")[uncited-references] section.
+  #link(calepin.url("/colophon/anomalies/"))[uncited-references] section.
 
 A genuinely real manuscript, not a toy — the same full-length fake
-article #link("/palimpsest/")[palimpsest] uses for its own examples,
+article #link(calepin.url("/palimpsest/"))[palimpsest] uses for its own examples,
 against a real Typst Universe template
 (#link("https://typst.app/universe/package/unequivocal-ams")[`@preview/unequivocal-ams`]),
 with real figures, a table, an equation, and palimpsest's own reviewer
@@ -70,7 +70,7 @@ against `@preview/charged-ieee`'s two-column layout instead.
 
 = applicable: only the one, real, plain compile
 
-Like #link("/checkitoff/project/")[checkitoff's `checklist(...)`], `report()`
+Like #link(calepin.url("/checkitoff/project/"))[checkitoff's `checklist(...)`], `report()`
 is only ever built from the single, real, plain compile —
 `applicable: () => contexture.variant() == "plain" and not
 contexture.preview()`. A `preview`/non-`"plain"`-`variant` overlay from

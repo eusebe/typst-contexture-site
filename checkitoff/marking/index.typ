@@ -42,7 +42,7 @@ An item can legitimately be checked more than once — a method described
 once and its rationale discussed elsewhere, say — in which case the
 grid lists every page it was found on. The one deliberate exception is
 a single passage that straddles a page break: see
-#link("/checkitoff/page-breaks/")[The page-break idiom] for the recommended
+#link(calepin.url("/checkitoff/page-breaks/"))[The page-break idiom] for the recommended
 way to get a correct, two-page citation for that case specifically.
 
 `na()` is the explicit counterpart to `check()`: some items genuinely
@@ -82,7 +82,7 @@ is still shown as a drafting aid:
 The item still resolves correctly in `checklist.pdf`, exactly as if it
 had been written `check(id, body)`. The only function that notices the
 difference is `excerpt-of`
-(#link("/checkitoff/excerpts/")[Quoting the real wording]): with no body to
+(#link(calepin.url("/checkitoff/excerpts/"))[Quoting the real wording]): with no body to
 quote, an occurrence marked this way simply contributes no excerpt,
 which is the honest answer, not an error. The "blank content" diagnostic
 never fires on it either — a missing body here is the deliberate shape
@@ -91,9 +91,8 @@ of this form, not the mistake it would be for `check(id)[]`.
 #m.note[
   The most common reason to reach for this form — combining checkitoff
   with a package that already renders the text, such as
-  `@preview/palimpsest`'s tracked-changes marks — is covered in full in
-  the closing chapter, #link("/checkitoff/ecosystem/")[Checkitoff in the
-  contexture ecosystem].
+  `@preview/palimpsest`'s tracked-changes marks — is covered in full at
+  #link(calepin.url("/combining/"))[Combining packages].
 ]
 
 #m.chapter-nav(

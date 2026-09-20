@@ -21,7 +21,7 @@ typst compile --features bundle --format bundle main.typ
 
 Every project built on `contexture` can also be compiled with two
 extra flags, explained in full in
-#link("/contexture/variant-preview/")[Two independent compile axes]
+#link(calepin.url("/contexture/variant-preview/"))[Two independent compile axes]
 below:
 
 ```sh
@@ -51,7 +51,7 @@ That name has nothing to do with the file just compiled, which could be
 called anything (`main.typ`, `report.typ`, ...) — it comes entirely
 from `bundle()`'s own `manuscript-name:` parameter, `"manuscript"` by
 default. More on this in
-#link("/contexture/bundle/")[satellite and bundle] below.
+#link(calepin.url("/contexture/bundle/"))[satellite and bundle] below.
 
 `glossary.pdf`, from the very same compile:
 
@@ -62,14 +62,14 @@ per thing:
 
 + `term()` calls `anchor("demo-term", ...)` — drops a small, named
   piece of data at this exact spot, then renders `body` as usual.
-  Covered next, in #link("/contexture/anchors/")[The anchor primitive].
+  Covered next, in #link(calepin.url("/contexture/anchors/"))[The anchor primitive].
 + `render-glossary()` calls `anchors("demo-term")` — every anchor of
   that kind, anywhere in the bundle, each with a real `location()` to
   read a page number off. Same chapter.
 + `satellite("glossary", ...)` describes the second document;
   `#show: bundle.with(documents: (glossary,))` is what actually
   produces both PDFs from one compile. Covered in
-  #link("/contexture/bundle/")[satellite and bundle].
+  #link(calepin.url("/contexture/bundle/"))[satellite and bundle].
 
 If what brought you here is specifically the `variant`/`preview`
 flags, skip ahead — they get their own chapter, with a dedicated

@@ -42,7 +42,7 @@ or underlined, since nothing changed.
 
 / `suppressed(anchors, note, summary: auto)`: `passage(anchors, suppress(note), summary: ...)`
   — `suppress`
-  (#link("/palimpsest/marking/#suppress")[Marking changes], above) for
+  (#link(calepin.url("/palimpsest/marking/#suppress"))[Marking changes], above) for
   a passage entirely made of it.
 
 #m.snippet("/packages/palimpsest/docs/manual-snippets/shortcuts-suppressed.typ")

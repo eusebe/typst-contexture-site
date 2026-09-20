@@ -48,7 +48,7 @@ The complete, progressive manual — a first revision round, marking
 changes, anchors, styling marks, shortcuts, writing the exchanges,
 pinpoint, xref, the change-list, tables, bibliography, diagnostics,
 wiring a real project, and palimpsest in the contexture ecosystem —
-starts at #link("/palimpsest/quickstart/")[Your first revision round].
+starts at #link(calepin.url("/palimpsest/quickstart/"))[Your first revision round].
 Two full worked examples (real Typst Universe templates, real figures)
 live in the
 #link("https://github.com/eusebe/typst-palimpsest/tree/main/examples")[repository],
@@ -58,6 +58,6 @@ alongside a PDF version
 = Combining with other packages
 
 `palimpsest`'s `letter(...)` is just a description of a document to
-build — it combines cleanly with #link("/checkitoff/")[checkitoff]'s
-`checklist(...)` and #link("/colophon/")[colophon]'s `report(...)` in
-the same compile. See #link("/combining/")[Combining packages].
+build — it combines cleanly with #link(calepin.url("/checkitoff/"))[checkitoff]'s
+`checklist(...)` and #link(calepin.url("/colophon/"))[colophon]'s `report(...)` in
+the same compile. See #link(calepin.url("/combining/"))[Combining packages].

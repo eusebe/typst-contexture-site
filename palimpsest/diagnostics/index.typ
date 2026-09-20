@@ -16,12 +16,12 @@ in the letter (the letter is never sent out for blind review the way
 the manuscript is, so hiding it in one mode buys nothing). This muting
 logic itself lives in `@preview/contexture`, shared with every other
 package built on it — see
-#link("/palimpsest/project/")[Wiring a real project] below.
+#link(calepin.url("/palimpsest/project/"))[Wiring a real project] below.
 
 Two already appeared earlier, in context: a numbered anchor with
-#link("/palimpsest/anchors/#require-exchange")[no matching exchange]
+#link(calepin.url("/palimpsest/anchors/#require-exchange"))[no matching exchange]
 and a bare anchor's exemption from it; `pinpoint` with
-#link("/palimpsest/pinpoint/#page-only-by-default")[no matching anchor]
+#link(calepin.url("/palimpsest/pinpoint/#page-only-by-default"))[no matching anchor]
 (`on-empty:`). Four more:
 
 #m.snippet("/packages/palimpsest/docs/manual-snippets/diagnostics-gallery.typ")
@@ -40,7 +40,7 @@ strips labels from what it re-emits before this check would even
 trigger.
 
 `contexture.bundle(strict: true, ...)` — the bundle's own `strict:`
-parameter, see #link("/palimpsest/project/")[Wiring a real project]
+parameter, see #link(calepin.url("/palimpsest/project/"))[Wiring a real project]
 below — turns every one of these into a hard compile error, in both
 modes, for palimpsest *and* any other package sharing the same bundle
 (checkitoff's checklist diagnostics included, if one is listed too):

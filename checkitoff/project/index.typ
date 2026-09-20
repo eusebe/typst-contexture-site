@@ -25,7 +25,7 @@ everything together from a small `main.typ`:
 `checklist(checklist:, grid-template: auto)` is what describes the
 checklist for `contexture.bundle` to build. `checklist:` has no default,
 for the same reason as `render-checklist`'s own `checklist:`
-(#link("/checkitoff/diagnostics/")[Reading the grid]). `grid-template:`
+(#link(calepin.url("/checkitoff/diagnostics/"))[Reading the grid]). `grid-template:`
 (`auto` = leave it alone) is applied to the grid separately from the
 manuscript's own `template:` — most journals want CONSORT's own
 official table layout on the checklist page, not the manuscript's own

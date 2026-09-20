@@ -43,7 +43,7 @@ The complete, progressive manual — a first checklist, marking items,
 diagnostics, quoting the wording, the page-break idiom, styling the
 grid, wiring a real project, the built-in checklists, and checkitoff in
 the contexture ecosystem — starts at
-#link("/checkitoff/quickstart/")[Your first checklist]. A PDF version
+#link(calepin.url("/checkitoff/quickstart/"))[Your first checklist]. A PDF version
 (#link("https://github.com/eusebe/typst-checkitoff/blob/main/docs/manual.pdf")[docs/manual.pdf])
 is also available in the
 #link("https://github.com/eusebe/typst-checkitoff")[repository].
@@ -51,6 +51,6 @@ is also available in the
 = Combining with other packages
 
 `checkitoff`'s `checklist(...)` combines cleanly with
-#link("/palimpsest/")[palimpsest]'s `letter(...)` and
-#link("/colophon/")[colophon]'s `report(...)` in the same compile. See
-#link("/combining/")[Combining packages].
+#link(calepin.url("/palimpsest/"))[palimpsest]'s `letter(...)` and
+#link(calepin.url("/colophon/"))[colophon]'s `report(...)` in the same compile. See
+#link(calepin.url("/combining/"))[Combining packages].

@@ -50,8 +50,8 @@
   align: (left, right),
   stroke: none,
   inset: (x: 0pt, y: 8pt),
-  if prev != none [#sym.arrow.l #link(prev.at(0))[#prev.at(1)]] else [],
-  if next != none [#link(next.at(0))[#next.at(1)] #sym.arrow.r] else [],
+  if prev != none [#sym.arrow.l #link(calepin.url(prev.at(0)))[#prev.at(1)]] else [],
+  if next != none [#link(calepin.url(next.at(0)))[#next.at(1)] #sym.arrow.r] else [],
 )
 
 // A labelled aside for a caveat, a design note, or a "why" digression —

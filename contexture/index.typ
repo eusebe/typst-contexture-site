@@ -5,16 +5,25 @@
 
 #title()
 
-The small, package-agnostic engine every other package on this site is
-built on: it turns Typst's experimental bundle export into a primitive
-any package author can use to produce a manuscript plus one or more
-companion documents that can query each other's real, final page
-numbers, from a single compile.
+*contexture* is the small, package-agnostic engine
+#link(calepin.url("/palimpsest/"))[palimpsest],
+#link(calepin.url("/checkitoff/"))[checkitoff], and
+#link(calepin.url("/colophon/"))[colophon] are all built on: it turns
+Typst's experimental bundle export into a primitive any package author
+can use to produce a manuscript plus one or more companion documents
+that can query each other's real, final page numbers, from a single
+compile. Reading this manual isn't required to use any of those three —
+it's here for whoever wants to understand *how* the ecosystem works
+underneath, see the mechanism demonstrated on its own, or build a new
+package on the same foundation.
 
 You'll rarely import `contexture` for what it does on its own — it has
 no notion of revisions, checklists, or word counts. You reach for it
 when you're building (or combining) packages that need to produce more
-than one document from one manuscript.
+than one document from one manuscript. The three packages above cover
+what exists today; because the mechanism is package-agnostic, a fourth
+built the same way gets it for free, with none of the first three
+having to change.
 
 = The problem
 
@@ -56,7 +65,7 @@ export (still experimental).
 The complete, progressive manual — a quickstart, the anchor primitive,
 a fuller list-of-figures example, satellite and bundle, the two compile
 axes, diagnostics, xref, and composing independent packages — starts at
-#link("/contexture/quickstart/")[Quickstart: a manuscript with a
+#link(calepin.url("/contexture/quickstart/"))[Quickstart: a manuscript with a
 generated companion]. A PDF version
 (#link("https://github.com/eusebe/typst-contexture/blob/main/docs/manual.pdf")[docs/manual.pdf])
 is also available in the
@@ -64,6 +73,6 @@ is also available in the
 
 = Built on `contexture`
 
-- #link("/palimpsest/")[palimpsest] — manuscript revisions and a reviewer response letter that cites the real pages.
-- #link("/checkitoff/")[checkitoff] — reporting-guideline checklists filled in with the real pages.
-- #link("/colophon/")[colophon] — a companion audit of the composed manuscript.
+- #link(calepin.url("/palimpsest/"))[palimpsest] — manuscript revisions and a reviewer response letter that cites the real pages.
+- #link(calepin.url("/checkitoff/"))[checkitoff] — reporting-guideline checklists filled in with the real pages.
+- #link(calepin.url("/colophon/"))[colophon] — a companion audit of the composed manuscript.

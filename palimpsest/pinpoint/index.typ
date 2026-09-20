@@ -125,7 +125,7 @@ An excerpt renders, by default, in whichever mode the *current* compile
 is running under — clean text in `response.pdf`, struck-through/underlined
 tracked style in `response-tracked.pdf` (both produced automatically
 once `exchanges` is set, see
-#link("/palimpsest/project/#the-letter-automatically-matched-to-the-manuscript-you-actually-send")[The
+#link(calepin.url("/palimpsest/project/#the-letter-automatically-matched-to-the-manuscript-you-actually-send"))[The
 letter, automatically] below). `mode:` overrides this for one call, in
 either direction.
 

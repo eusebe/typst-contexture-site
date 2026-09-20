@@ -8,12 +8,12 @@
 
 `render-checklist(checklist:, title: auto)` is the function that draws
 the grid you already saw in
-#link("/checkitoff/quickstart/")[Your first checklist]: every official
+#link(calepin.url("/checkitoff/quickstart/"))[Your first checklist]: every official
 item, grouped by section (and, when the checklist has one, by a
 mid-level group inside a section), each item's resolved page number(s),
 and a Diagnostics block listing anything that doesn't add up. In an
 ordinary project you never call it directly — the `checklist(...)`
-satellite (#link("/checkitoff/project/")[Wiring a real project]) calls it
+satellite (#link(calepin.url("/checkitoff/project/"))[Wiring a real project]) calls it
 for you — but it's exported on its own too, in case a project ever
 needs the grid outside the usual two-document setup.
 
@@ -27,7 +27,7 @@ than one grid.
 = Diagnostics
 
 Five situations are flagged, always in the same way, so `strict:` mode
-(#link("/checkitoff/diagnostics/#strict-mode")[below]) catches every one of
+(#link(calepin.url("/checkitoff/diagnostics/#strict-mode"))[below]) catches every one of
 them consistently:
 
 - an item never `check()`'d or `na()`'d at all — *not covered*;

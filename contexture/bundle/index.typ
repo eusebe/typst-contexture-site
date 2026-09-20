@@ -16,7 +16,7 @@ nest its document inside whatever the first one already produced.
 small constructor that returns a `satellite(...)` value — inert data,
 not a `document(...)` call — and the author lists as many of those as
 they like under one shared `documents:`, exactly as
-#link("/contexture/quickstart/")[the quickstart] above already did
+#link(calepin.url("/contexture/quickstart/"))[the quickstart] above already did
 with `glossary`.
 
 / `satellite(name, render:, applicable:, side-content: none)`:

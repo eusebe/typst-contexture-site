@@ -26,7 +26,7 @@ got there*. They're independent on purpose, so a project can cross
 them freely rather than picking one axis and losing the other.
 
 A small worked example, built on the same `term()` as
-#link("/contexture/quickstart/")[the quickstart], plus one new function
+#link(calepin.url("/contexture/quickstart/"))[the quickstart], plus one new function
 that only exists to make the difference concrete:
 
 #m.snippet("/packages/contexture/docs/manual-snippets/bundle-variant-preview.typ")

@@ -27,7 +27,7 @@ typst compile --features bundle --format bundle --input preview=true main.typ
 ```
 
 This produces `manuscript-preview.pdf` only — no `checklist.pdf` in this
-compile, and #link("/checkitoff/project/")[Wiring a real project] explains
+compile, and #link(calepin.url("/checkitoff/project/"))[Wiring a real project] explains
 why — with every `check()`'d span lightly highlighted and tagged with
 its item id, so you can see at a glance what's covered so far and
 where. Nothing about it ever reaches the real submission.
@@ -40,14 +40,14 @@ where. Nothing about it ever reaches the real submission.
   real, multi-file project instead wires its manuscript and its
   checklist together explicitly — that pattern is covered once you've
   seen the pieces it's built from, in
-  #link("/checkitoff/project/")[Wiring a real project].
+  #link(calepin.url("/checkitoff/project/"))[Wiring a real project].
 ]
 
 = A first, complete example
 
 The smallest complete example: a four-item made-up checklist — a real
 project would pass `checklists.consort` or another built-in grid
-instead (see #link("/checkitoff/checklists/")[Built-in checklists]), but a
+instead (see #link(calepin.url("/checkitoff/checklists/"))[Built-in checklists]), but a
 tiny one keeps the whole grid on one page here — a short manuscript,
 and two `check()` calls plus one `na()`.
 
@@ -97,7 +97,7 @@ directly from the single `na("14", reason: [...])` call above, with no
 `check()` anywhere for that id. If an item had been left neither
 `check()`'d nor `na()`'d, its Page cell would instead show a small
 warning marker — covered in full in
-#link("/checkitoff/diagnostics/")[Reading the grid], once the individual
+#link(calepin.url("/checkitoff/diagnostics/"))[Reading the grid], once the individual
 marking functions have been introduced properly.
 
 = Recommended workflow
@@ -107,7 +107,7 @@ repeats the same two calls, `check()` and `na()`, at every relevant
 spot. In practice:
 
 + Pick a checklist — one of the built-in ones
-  (#link("/checkitoff/checklists/")[Built-in checklists]), or your own
+  (#link(calepin.url("/checkitoff/checklists/"))[Built-in checklists]), or your own
   dictionary of the same shape.
 + Write the manuscript as usual, wrapping each passage that answers an
   item in `check(id)[...]`, and grouping every genuinely inapplicable
@@ -117,13 +117,13 @@ spot. In practice:
   with no effect on the real manuscript.
 + Once the draft feels complete, compile normally and read
   `checklist.pdf`. Its Diagnostics block
-  (#link("/checkitoff/diagnostics/")[below]) lists anything unresolved: an
+  (#link(calepin.url("/checkitoff/diagnostics/"))[below]) lists anything unresolved: an
   item never covered, a `check()` with nothing in it, an id that
   doesn't match any item, or a genuine contradiction.
 + Fix each one — add the missing `check()`, or an `na()` with a real
   reason — and recompile.
 + Before submission, compile once with `strict: true`
-  (#link("/checkitoff/diagnostics/#strict-mode")[below]): every remaining
+  (#link(calepin.url("/checkitoff/diagnostics/#strict-mode"))[below]): every remaining
   diagnostic becomes a hard compile error instead of a soft marker, a
   clean pass-fail gate.
 + Submit `manuscript.pdf` and `checklist.pdf` together — they came from

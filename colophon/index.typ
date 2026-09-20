@@ -52,7 +52,7 @@ The complete, progressive manual — a first audit, word counts, the
 abstract, the figure/table inventory, orphan labels and uncited
 references, wiring a real project, and colophon in the contexture
 ecosystem — starts at
-#link("/colophon/quickstart/")[Quickstart: your first audit].
+#link(calepin.url("/colophon/quickstart/"))[Quickstart: your first audit].
 
 = Examples
 
@@ -65,6 +65,6 @@ its reviewer letter — live in the repository:
 = Combining with other packages
 
 `colophon`'s `report(...)` combines cleanly with
-#link("/palimpsest/")[palimpsest]'s `letter(...)` and
-#link("/checkitoff/")[checkitoff]'s `checklist(...)` in the same compile. See
-#link("/combining/")[Combining packages].
+#link(calepin.url("/palimpsest/"))[palimpsest]'s `letter(...)` and
+#link(calepin.url("/checkitoff/"))[checkitoff]'s `checklist(...)` in the same compile. See
+#link(calepin.url("/combining/"))[Combining packages].

@@ -9,10 +9,6 @@ default-language = "en"
 include = ["assets/**"]
 
 [[menus.main]]
-target = "contexture/index.typ"
-label = "contexture"
-
-[[menus.main]]
 target = "palimpsest/index.typ"
 label = "palimpsest"
 
@@ -27,6 +23,10 @@ label = "colophon"
 [[menus.main]]
 target = "combining/index.typ"
 label = "Combining"
+
+[[menus.main]]
+target = "contexture/index.typ"
+label = "contexture"
 
 [[menus.social]]
 target = "https://github.com/eusebe"
@@ -49,36 +49,6 @@ title = "Ecosystem"
 
   [[sidebar.section.item]]
   target = "combining/index.typ"
-
-[[sidebar.section]]
-title = "contexture"
-
-  [[sidebar.section.item]]
-  target = "contexture/index.typ"
-
-  [[sidebar.section.item]]
-  target = "contexture/quickstart/index.typ"
-
-  [[sidebar.section.item]]
-  target = "contexture/anchors/index.typ"
-
-  [[sidebar.section.item]]
-  target = "contexture/list-of-figures/index.typ"
-
-  [[sidebar.section.item]]
-  target = "contexture/bundle/index.typ"
-
-  [[sidebar.section.item]]
-  target = "contexture/variant-preview/index.typ"
-
-  [[sidebar.section.item]]
-  target = "contexture/diagnostics/index.typ"
-
-  [[sidebar.section.item]]
-  target = "contexture/xref/index.typ"
-
-  [[sidebar.section.item]]
-  target = "contexture/composing/index.typ"
 
 [[sidebar.section]]
 title = "palimpsest"
@@ -187,3 +157,33 @@ title = "colophon"
 
   [[sidebar.section.item]]
   target = "colophon/ecosystem/index.typ"
+
+[[sidebar.section]]
+title = "contexture"
+
+  [[sidebar.section.item]]
+  target = "contexture/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/quickstart/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/anchors/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/list-of-figures/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/bundle/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/variant-preview/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/diagnostics/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/xref/index.typ"
+
+  [[sidebar.section.item]]
+  target = "contexture/composing/index.typ"

@@ -6,88 +6,34 @@
 
 #title()
 
-colophon is one of the packages built on `contexture`, a small shared
-package none of them ship duplicated logic for. This chapter explains
-what `contexture` actually contributes, introduces the other packages
-built on it, and covers what changes when they're used together.
+Everything above is self-contained: colophon works with nothing else
+installed. `report(...)` runs on top of `contexture`, a small shared
+package none of these tools ship duplicated logic for — you don't need
+to know anything about it to use colophon as documented in this manual.
+Unlike its siblings, colophon doesn't use `contexture`'s anchor
+primitive at all: it has no per-passage markup to anchor, since it
+audits the composed document rather than passages an author marked —
+which is also why it never needs a nesting rule when combined with
+them.
 
-= What contexture does
+`report(...)` is also just a description of a document to build, which
+means it combines cleanly, in the same compile, with sibling packages
+built the same way:
 
-Everything in this manual that reports a *real* page count or figure
-number — `audit.pdf` citing exactly how many pages `manuscript.pdf`
-actually laid out to — relies on Typst's experimental bundle export,
-which lets one compile produce several documents that can query each
-other's final layout. `contexture` is the small toolkit that turns that
-raw capability into something a package author can build on without
-reinventing it each time:
+- #link(calepin.url("/palimpsest/"))[palimpsest] — manuscript revisions
+  and a reviewer response letter that cites the manuscript's real
+  pages. As #link(calepin.url("/colophon/word-counts/"))[Word counts]
+  already showed, colophon reads straight through palimpsest's own
+  marks when both are used together.
+- #link(calepin.url("/checkitoff/"))[checkitoff] — reporting-guideline
+  checklists (CONSORT, PRISMA, SPIRIT, STARD, STROBE) that cite the
+  manuscript's real pages.
 
-- a *shared compile pilot* (`bundle`) — the single point that ever
-  calls Typst's own `document(...)`, so colophon's report and, say,
-  another package's own generated document can both be listed side by
-  side without competing to own the compile;
-- two independent *compile flags*, `variant` and `preview` — what
-  `report()`'s own `applicable` rule
-  (#link("/colophon/project/")[Wiring a real project]) reads to build
-  only from the one, real, plain compile.
-
-Unlike #link("/palimpsest/")[palimpsest] and #link("/checkitoff/")[checkitoff],
-colophon doesn't use `contexture`'s *anchor* primitive at all — it has
-no per-passage markup to anchor, since it audits the composed document
-rather than passages an author marked. Full manual:
-#link("/contexture/")[contexture].
-
-= palimpsest and checkitoff
-
-`palimpsest` tracks changes made to a manuscript during peer review and
-generates a reviewer response letter that cites the manuscript's real
-pages. `checkitoff` fills in a reporting-guideline checklist (CONSORT,
-PRISMA, SPIRIT, STARD, STROBE...), also citing the real pages. See
-#link("/palimpsest/")[palimpsest]'s and #link("/checkitoff/")[checkitoff]'s
-own manuals for the full picture; nothing in either is needed to use
-colophon on its own — and, as
-#link("/colophon/word-counts/")[Word counts] already showed, colophon
-reads straight through palimpsest's own marks when both are used
-together.
-
-= Combining all three
-
-Because `contexture.bundle` — not any one package — owns `documents:`,
-adding colophon's report alongside a reviewer letter and a checklist is
-just one more entry in the same array:
-
-#m.snippet("/packages/colophon/docs/manual-snippets/triple-combo.typ")
-
-One compile, four documents — the manuscript, palimpsest's response
-letter, checkitoff's completed CONSORT grid, and colophon's audit, all
-from the same compile, all citing each other's real pages:
-
-#m.screenshot("/packages/colophon/docs/manual-snippets/triple-combo/audit-plain.png")
-
-#m.note(title: "colophon needs no nesting rule")[
-  #link("/palimpsest/")[palimpsest]'s `passage()` and
-  #link("/checkitoff/")[checkitoff]'s `check()` both render their own
-  content, which is exactly why combining *them* needs two rules —
-  never nest one's marking function inside the other's, and never call
-  both as independent, rendering siblings on the same span (see
-  #link("/combining/")[Combining packages] for the full reasoning).
-  `report()` renders nothing inside the manuscript body at all — it
-  only reads what `instrument()` captured and what the composed
-  document already contains — so neither rule has anything to apply
-  to. The only wiring colophon ever asks for is the one `instrument()`
-  wrap on `template:`, shown throughout this manual.
-]
-
-= Where to go next
-
-- The mechanics behind all of this, on their own, with no notion of
-  revisions, checklists, or audits attached:
-  #link("/contexture/")[contexture]'s manual.
-- Tracked manuscript revisions and reviewer response letters that cite
-  the real pages: #link("/palimpsest/")[palimpsest]'s manual.
-- Reporting-guideline checklists that cite the real pages:
-  #link("/checkitoff/")[checkitoff]'s manual.
-- Everything about auditing a manuscript on its own: the rest of this
-  manual, from #link("/colophon/quickstart/")[Quickstart] onward.
+For a full worked example combining all three, see
+#link(calepin.url("/combining/"))[Combining packages]. For the shared
+mechanism underneath all of it — the compile engine that lets several
+packages contribute to the same compile — see
+#link(calepin.url("/contexture/"))[contexture]'s own manual.
 
 #m.chapter-nav(
   prev: ("/colophon/project/", "Wiring a real project"),
