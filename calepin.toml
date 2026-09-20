@@ -25,7 +25,7 @@ label = "colophon"
 
 [[menus.main]]
 target = "combining/index.typ"
-label = "Combining"
+label = "combining"
 
 [[menus.main]]
 target = "contexture/index.typ"
