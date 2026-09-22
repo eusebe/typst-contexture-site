@@ -48,9 +48,9 @@ produces the manuscript, not a stale copy.
 Requires Typst 0.15 or later, specifically its `--features bundle`
 export (still experimental).
 
-= Full manual
+= Full guide
 
-The complete, progressive manual — a first audit, word counts, the
+The complete, progressive guide — a first audit, word counts, the
 abstract, the figure/table inventory, orphan labels and uncited
 references, wiring a real project, and colophon in the contexture
 ecosystem — starts at

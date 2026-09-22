@@ -63,16 +63,13 @@ under one shared `documents:`.
 Requires Typst 0.15 or later, specifically its `--features bundle`
 export (still experimental).
 
-= Full manual
+= Full guide
 
-The complete, progressive manual — a quickstart, the anchor primitive,
+The complete, progressive guide — a quickstart, the anchor primitive,
 a fuller list-of-figures example, satellite and bundle, the two compile
 axes, diagnostics, xref, and composing independent packages — starts at
 #link(calepin.url("/contexture/quickstart/"))[Quickstart: a manuscript with a
-generated companion]. A PDF version
-(#link("https://github.com/eusebe/typst-contexture/blob/main/docs/manual.pdf")[docs/manual.pdf])
-is also available in the
-#link("https://github.com/eusebe/typst-contexture")[repository].
+generated companion].
 
 = Built on `contexture`
 

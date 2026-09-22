@@ -10,7 +10,12 @@ Everything above is self-contained: checkitoff works with nothing else
 installed. `checklist(...)` runs on top of `contexture`, a small shared
 package none of these tools ship duplicated logic for — you don't need
 to know anything about it to use checkitoff as documented in this
-manual.
+manual. Concretely, though: `check()` is a thin wrapper around
+`contexture`'s anchor primitive, and `checklist(...)` is a thin wrapper
+around its shared compile pilot (`bundle`) — the same two primitives
+every sibling package below is built on, alongside the `variant`/
+`preview` compile-axis pair and the shared diagnostics/`strict`
+mechanism.
 
 `checklist(...)` is also just a description of a document to build,
 which means it combines cleanly, in the same compile, with sibling

@@ -45,18 +45,16 @@ _derivable_ from the first.
 Requires Typst 0.15 or later, specifically its `--features bundle`
 export (still experimental).
 
-= Full manual
+= Full guide
 
-The complete, progressive manual — a first revision round, marking
+The complete, progressive guide — a first revision round, marking
 changes, anchors, styling marks, shortcuts, writing the exchanges,
 pinpoint, xref, the change-list, tables, bibliography, diagnostics,
 wiring a real project, and palimpsest in the contexture ecosystem —
 starts at #link(calepin.url("/palimpsest/quickstart/"))[Your first revision round].
 Two full worked examples (real Typst Universe templates, real figures)
 live in the
-#link("https://github.com/eusebe/typst-palimpsest/tree/main/examples")[repository],
-alongside a PDF version
-(#link("https://github.com/eusebe/typst-palimpsest/blob/main/docs/manual.pdf")[docs/manual.pdf]).
+#link("https://github.com/eusebe/typst-palimpsest/tree/main/examples")[repository].
 
 = Combining with other packages
 
