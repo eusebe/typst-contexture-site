@@ -60,11 +60,13 @@ ecosystem — starts at
 
 = Examples
 
-Two complete, working projects — the same full-length fake articles
-`palimpsest` uses for its own examples, with `colophon` added alongside
-its reviewer letter — live in the repository:
-#link(m.gh-tag-url("colophon", path: "examples"))[examples/]
-(#link("https://github.com/eusebe/typst-colophon")[repository]).
+Two complete, working projects live under
+#link(m.gh-tag-url("colophon", path: "examples"))[`examples/`] — the
+same two full-length fake articles `palimpsest` uses for its own
+examples, each with `colophon` added alongside its reviewer letter:
+
+- #link(m.gh-tag-url("colophon", path: "examples/fridge-study"))[`fridge-study/`] — against `@preview/unequivocal-ams`, with real figures built from `@preview/lilaq`. (⇒ pdf: #link(m.gh-tag-url("colophon", path: "examples/fridge-study/main/manuscript.pdf", kind: "blob"))[manuscript], #link(m.gh-tag-url("colophon", path: "examples/fridge-study/main/response.pdf", kind: "blob"))[response], #link(m.gh-tag-url("colophon", path: "examples/fridge-study/main/audit.pdf", kind: "blob"))[audit])
+- #link(m.gh-tag-url("colophon", path: "examples/emoji-email"))[`emoji-email/`] — against `@preview/charged-ieee`'s two-column layout, same real-figure treatment. (⇒ pdf: #link(m.gh-tag-url("colophon", path: "examples/emoji-email/main/manuscript.pdf", kind: "blob"))[manuscript], #link(m.gh-tag-url("colophon", path: "examples/emoji-email/main/response.pdf", kind: "blob"))[response], #link(m.gh-tag-url("colophon", path: "examples/emoji-email/main/audit.pdf", kind: "blob"))[audit])
 
 = Combining with other packages
 

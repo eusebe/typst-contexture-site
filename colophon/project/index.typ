@@ -64,8 +64,10 @@ prose:
 
 The complete, working project —
 #link(m.gh-tag-url("colophon", path: "examples/fridge-study"))[`examples/fridge-study/`]
+(⇒ pdf: #link(m.gh-tag-url("colophon", path: "examples/fridge-study/main/manuscript.pdf", kind: "blob"))[manuscript], #link(m.gh-tag-url("colophon", path: "examples/fridge-study/main/response.pdf", kind: "blob"))[response], #link(m.gh-tag-url("colophon", path: "examples/fridge-study/main/audit.pdf", kind: "blob"))[audit])
 — lives in the repository, alongside a second one,
-#link(m.gh-tag-url("colophon", path: "examples/emoji-email"))[`emoji-email/`],
+#link(m.gh-tag-url("colophon", path: "examples/emoji-email"))[`emoji-email/`]
+(⇒ pdf: #link(m.gh-tag-url("colophon", path: "examples/emoji-email/main/manuscript.pdf", kind: "blob"))[manuscript], #link(m.gh-tag-url("colophon", path: "examples/emoji-email/main/response.pdf", kind: "blob"))[response], #link(m.gh-tag-url("colophon", path: "examples/emoji-email/main/audit.pdf", kind: "blob"))[audit]),
 against `@preview/charged-ieee`'s two-column layout instead.
 
 = applicable: only the one, real, plain compile
