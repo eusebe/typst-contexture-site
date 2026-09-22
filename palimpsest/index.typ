@@ -54,7 +54,7 @@ wiring a real project, and palimpsest in the contexture ecosystem —
 starts at #link(calepin.url("/palimpsest/quickstart/"))[Your first revision round].
 Two full worked examples (real Typst Universe templates, real figures)
 live in the
-#link("https://github.com/eusebe/typst-palimpsest/tree/main/examples")[repository].
+#link("https://github.com/eusebe/typst-palimpsest/tree/0.1.0/examples")[repository].
 
 = Combining with other packages
 

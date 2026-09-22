@@ -61,7 +61,7 @@ ecosystem — starts at
 Two complete, working projects — the same full-length fake articles
 `palimpsest` uses for its own examples, with `colophon` added alongside
 its reviewer letter — live in the repository:
-#link("https://github.com/eusebe/typst-colophon/tree/main/examples")[examples/]
+#link("https://github.com/eusebe/typst-colophon/tree/0.1.0/examples")[examples/]
 (#link("https://github.com/eusebe/typst-colophon")[repository]).
 
 = Combining with other packages
