@@ -63,9 +63,9 @@ prose:
 #m.screenshot("/packages/colophon/docs/manual-snippets/project-example/audit-plain.png")
 
 The complete, working project —
-#link("https://github.com/eusebe/typst-colophon/tree/0.1.0/examples/fridge-study")[`examples/fridge-study/`]
+#link(m.gh-tag-url("colophon", path: "examples/fridge-study"))[`examples/fridge-study/`]
 — lives in the repository, alongside a second one,
-#link("https://github.com/eusebe/typst-colophon/tree/0.1.0/examples/emoji-email")[`emoji-email/`],
+#link(m.gh-tag-url("colophon", path: "examples/emoji-email"))[`emoji-email/`],
 against `@preview/charged-ieee`'s two-column layout instead.
 
 = applicable: only the one, real, plain compile

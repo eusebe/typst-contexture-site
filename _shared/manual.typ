@@ -93,6 +93,34 @@
   inline-logo(name, css-height: css-height, pdf-height: pdf-height),
 )
 
+// Reads a package's own typst.toml straight from its submodule under
+// packages/ — the single source of truth for its published version, so
+// the site never carries a second, separately-maintained copy of that
+// number to forget about at release time.
+#let pkg-toml(name) = toml("/packages/" + name + "/typst.toml")
+#let pkg-version(name) = pkg-toml(name).package.version
+
+// A small "Documents vX.Y.Z" line for a package's landing page, read
+// live from its own typst.toml. Bump the submodule pointer at release
+// time and this — and every gh-tag-url(...) link on the page — updates
+// itself; nothing else to remember to change by hand.
+#let version-note(name) = text(size: 0.85em, style: "italic")[
+  Documents #name version #pkg-version(name).
+]
+
+// A GitHub link into a package's own repository, pinned to the tag
+// matching the version this site actually vendors — never `main`,
+// which drifts the moment the dev repo moves past what's documented
+// here. `path` is relative to the repo root ("examples",
+// "examples/fridge-study", ...); omit it to link the repo root itself.
+// `repo` only needs setting when the GitHub repo name differs from the
+// package name (not the case for any package in this ecosystem today).
+#let gh-tag-url(name, path: "", repo: none) = {
+  let r = if repo == none { name } else { repo }
+  let base = "https://github.com/eusebe/typst-" + r + "/tree/" + pkg-version(name)
+  if path == "" { base } else { base + "/" + path }
+}
+
 // A labelled aside for a caveat, a design note, or a "why" digression —
 // calepin's own themed callout component (same reasoning as
 // `screenshot` above: a hand-rolled `block(stroke: (left: ...))` is

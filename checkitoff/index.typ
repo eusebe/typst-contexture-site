@@ -8,6 +8,8 @@
 
 #title()
 
+#m.version-note("checkitoff")
+
 *checkitoff* fills in a reporting-guideline checklist — CONSORT, PRISMA,
 SPIRIT, STARD, STROBE — automatically. Mark where each item is
 answered in your manuscript; one compile produces the clean manuscript

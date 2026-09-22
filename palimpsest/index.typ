@@ -8,6 +8,8 @@
 
 #title()
 
+#m.version-note("palimpsest")
+
 *palimpsest* turns one annotated manuscript into everything a
 peer-review response needs: the clean manuscript, a tracked-changes
 version showing every edit, and a response letter that cites the
@@ -54,7 +56,7 @@ wiring a real project, and palimpsest in the contexture ecosystem —
 starts at #link(calepin.url("/palimpsest/quickstart/"))[Your first revision round].
 Two full worked examples (real Typst Universe templates, real figures)
 live in the
-#link("https://github.com/eusebe/typst-palimpsest/tree/0.1.0/examples")[repository].
+#link(m.gh-tag-url("palimpsest", path: "examples"))[repository].
 
 = Combining with other packages
 

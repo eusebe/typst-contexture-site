@@ -8,6 +8,8 @@
 
 #title()
 
+#m.version-note("colophon")
+
 #m.side-by-side(
   m.screenshot("/packages/colophon/readme-assets/manuscript.png", caption: [A short manuscript, compiled normally]),
   m.screenshot("/packages/colophon/readme-assets/audit.png", caption: [The generated audit.pdf]),
@@ -61,7 +63,7 @@ ecosystem — starts at
 Two complete, working projects — the same full-length fake articles
 `palimpsest` uses for its own examples, with `colophon` added alongside
 its reviewer letter — live in the repository:
-#link("https://github.com/eusebe/typst-colophon/tree/0.1.0/examples")[examples/]
+#link(m.gh-tag-url("colophon", path: "examples"))[examples/]
 (#link("https://github.com/eusebe/typst-colophon")[repository]).
 
 = Combining with other packages

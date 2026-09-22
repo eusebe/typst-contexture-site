@@ -8,6 +8,8 @@
 
 #title()
 
+#m.version-note("contexture")
+
 *contexture* is the small, package-agnostic engine
 #link(calepin.url("/palimpsest/"))[palimpsest],
 #link(calepin.url("/checkitoff/"))[checkitoff], and
