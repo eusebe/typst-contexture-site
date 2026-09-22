@@ -113,11 +113,14 @@
 // which drifts the moment the dev repo moves past what's documented
 // here. `path` is relative to the repo root ("examples",
 // "examples/fridge-study", ...); omit it to link the repo root itself.
-// `repo` only needs setting when the GitHub repo name differs from the
-// package name (not the case for any package in this ecosystem today).
-#let gh-tag-url(name, path: "", repo: none) = {
+// `kind`: "tree" (default) for a directory, "blob" for a single file
+// (e.g. a compiled example PDF — GitHub renders blobs and trees at
+// different URLs). `repo` only needs setting when the GitHub repo name
+// differs from the package name (not the case for any package in this
+// ecosystem today).
+#let gh-tag-url(name, path: "", kind: "tree", repo: none) = {
   let r = if repo == none { name } else { repo }
-  let base = "https://github.com/eusebe/typst-" + r + "/tree/" + pkg-version(name)
+  let base = "https://github.com/eusebe/typst-" + r + "/" + kind + "/" + pkg-version(name)
   if path == "" { base } else { base + "/" + path }
 }
 

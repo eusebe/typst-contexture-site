@@ -54,9 +54,13 @@ changes, anchors, styling marks, shortcuts, writing the exchanges,
 pinpoint, xref, the change-list, tables, bibliography, diagnostics,
 wiring a real project, and palimpsest in the contexture ecosystem —
 starts at #link(calepin.url("/palimpsest/quickstart/"))[Your first revision round].
-Two full worked examples (real Typst Universe templates, real figures)
-live in the
-#link(m.gh-tag-url("palimpsest", path: "examples"))[repository].
+
+Four complete, working projects live under
+#link(m.gh-tag-url("palimpsest", path: "examples"))[`examples/`]:
+
+- #link(m.gh-tag-url("palimpsest", path: "examples/pilot"))[`pilot/`] — the smallest complete three-file project. Copy it as a starting point. (⇒ pdf: #link(m.gh-tag-url("palimpsest", path: "examples/pilot/main/manuscript.pdf", kind: "blob"))[manuscript], #link(m.gh-tag-url("palimpsest", path: "examples/pilot/main/manuscript-tracked.pdf", kind: "blob"))[tracked], #link(m.gh-tag-url("palimpsest", path: "examples/pilot/main/response.pdf", kind: "blob"))[response], #link(m.gh-tag-url("palimpsest", path: "examples/pilot/main/response-tracked.pdf", kind: "blob"))[response-tracked])
+- #link(m.gh-tag-url("palimpsest", path: "examples/fridge-study"))[`fridge-study/`] (⇒ pdf: #link(m.gh-tag-url("palimpsest", path: "examples/fridge-study/main/manuscript.pdf", kind: "blob"))[manuscript], #link(m.gh-tag-url("palimpsest", path: "examples/fridge-study/main/manuscript-tracked.pdf", kind: "blob"))[tracked], #link(m.gh-tag-url("palimpsest", path: "examples/fridge-study/main/response.pdf", kind: "blob"))[response], #link(m.gh-tag-url("palimpsest", path: "examples/fridge-study/main/response-tracked.pdf", kind: "blob"))[response-tracked]) and #link(m.gh-tag-url("palimpsest", path: "examples/emoji-email"))[`emoji-email/`] (⇒ pdf: #link(m.gh-tag-url("palimpsest", path: "examples/emoji-email/main/manuscript.pdf", kind: "blob"))[manuscript], #link(m.gh-tag-url("palimpsest", path: "examples/emoji-email/main/manuscript-tracked.pdf", kind: "blob"))[tracked], #link(m.gh-tag-url("palimpsest", path: "examples/emoji-email/main/response.pdf", kind: "blob"))[response], #link(m.gh-tag-url("palimpsest", path: "examples/emoji-email/main/response-tracked.pdf", kind: "blob"))[response-tracked]) — two full, deliberately over-the-top mock studies (multi-page manuscripts built on real Typst Universe templates, `@preview/unequivocal-ams` and `@preview/charged-ieee`, with real figures via `@preview/lilaq`) exercising essentially every feature at once: two reviewers and an editor, co-authors leaving their own notes alongside them, `change-list()`, `pinpoint` both as a page reference and as a verbatim excerpt, cross-references, and a letter-only bibliography.
+- #link(m.gh-tag-url("palimpsest", path: "examples/coauthors-simple"))[`coauthors-simple/`] (⇒ pdf: #link(m.gh-tag-url("palimpsest", path: "examples/coauthors-simple/manuscript.pdf", kind: "blob"))[manuscript], #link(m.gh-tag-url("palimpsest", path: "examples/coauthors-simple/manuscript-tracked.pdf", kind: "blob"))[tracked]) — the no-reviewer, no-letter, no-bundle shape: just `add`/`del`/`change-list` in a single file, for co-authors tracking their own edits with nothing else attached.
 
 = Combining with other packages
 
